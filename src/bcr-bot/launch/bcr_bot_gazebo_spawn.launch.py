@@ -61,6 +61,20 @@ def generate_launch_description():
         executable='spawn_entity.py',
         output='screen',
         arguments=[
+            '-topic', "/robot_description_01",
+            '-entity', PythonExpression(['"', robot_namespace, '_robot"']), #default enitity name _bcr_bot
+            '-z', "0.28",
+            '-x', position_x,
+            '-y', position_y,
+            '-Y', orientation_yaw
+        ]
+    )
+
+    spawn_entity = Node(
+        package='gazebo_ros',
+        executable='spawn_entity.py',
+        output='screen',
+        arguments=[
             '-topic', "/robot_description",
             '-entity', PythonExpression(['"', robot_namespace, '_robot"']), #default enitity name _bcr_bot
             '-z', "0.28",

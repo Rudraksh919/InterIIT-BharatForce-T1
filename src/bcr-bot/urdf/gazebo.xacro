@@ -24,7 +24,7 @@
             <max_wheel_torque>${traction_max_wheel_torque}</max_wheel_torque>
             <command_topic>cmd_vel</command_topic>
             <odometry_topic>$(arg wheel_odom_topic)</odometry_topic>
-            <odometry_frame>odom</odometry_frame>
+            <odometry_frame>odom</odometry_frame>r
             <publish_odom_tf>$(arg publish_wheel_odom_tf)</publish_odom_tf>
             <publish_wheel_tf>true</publish_wheel_tf>
             <publish_odom>true</publish_odom>

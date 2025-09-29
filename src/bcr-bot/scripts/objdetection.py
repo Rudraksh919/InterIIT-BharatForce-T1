@@ -2,6 +2,8 @@
 
 import rclpy
 from rclpy.node import Node
+from ament_index_python.packages import get_package_share_directory
+import os
 from sensor_msgs.msg import Image, CameraInfo, PointCloud2
 from geometry_msgs.msg import PointStamped
 from cv_bridge import CvBridge
@@ -45,7 +47,8 @@ class ConeDetectorNode(Node):
         self.cam_intrinsics = None
 
         # Load YOLO model
-        self.model = YOLO("best.pt")
+        model_path = os.path.join(get_package_share_directory('bcr_bot'), 'Detectionmodels', 'cone_detection.pt')
+        self.model = YOLO(model_path)
         self.get_logger().info("YOLO model loaded successfully.")
 
     def cam_info_callback(self, msg):

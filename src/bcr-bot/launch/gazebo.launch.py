@@ -8,6 +8,8 @@ from launch.substitutions import LaunchConfiguration
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.actions import SetEnvironmentVariable
 from launch.actions import AppendEnvironmentVariable
+from launch_ros.actions import Node
+
 
 
 def generate_launch_description():
@@ -34,7 +36,11 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
-        # Declare launch arguments
+        Node(
+            package='bcr_bot',       # package name
+            executable='objdetection.py',  # your Python node
+            name='cone_detector_node',  # node name
+        ),
 
         AppendEnvironmentVariable(
             name='GAZEBO_MODEL_PATH',
