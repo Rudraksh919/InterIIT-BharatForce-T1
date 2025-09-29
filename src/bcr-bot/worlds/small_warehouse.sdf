@@ -10,6 +10,20 @@
         <pose frame="">0.0 0.0 0 0 0 0</pose>
 	</model>
 
+    <model name="ConstructionCone_01_001">
+        <include>
+            <uri>model://ConstructionCone</uri>
+        </include>
+        <pose frame="">0.0 0.0 0 0 0 0</pose>
+	</model>
+
+    <model name="ConstructionCone_01_002">
+        <include>
+            <uri>model://ConstructionCone</uri>
+        </include>
+        <pose frame="">0.0 -2.0 0 0 0 0</pose>
+	</model>
+
     <model name="aws_robomaker_warehouse_ShelfF_01_001">
         <include>
             <uri>model://aws_robomaker_warehouse_ShelfF_01</uri>
@@ -17,14 +31,14 @@
         <pose frame="">-5.795143 -0.956635 0 0 0 0</pose>
 	</model>
 
-        <model name="aws_robomaker_warehouse_WallB_01_001">
+	<model name="aws_robomaker_warehouse_WallB_01_001">
         <include>
             <uri>model://aws_robomaker_warehouse_WallB_01</uri>
         </include>
         <pose frame="">0.0 0.0 0 0 0 0</pose>
 	</model>
 
-        <model name="aws_robomaker_warehouse_ShelfE_01_001">
+    <model name="aws_robomaker_warehouse_ShelfE_01_001">
         <include>
             <uri>model://aws_robomaker_warehouse_ShelfE_01</uri>
         </include>
