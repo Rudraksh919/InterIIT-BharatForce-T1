@@ -17,6 +17,13 @@
         <pose frame="">0.0 2.0 0 0 0 0</pose>
 	</model>
 
+    <model name="female_01">
+        <include>
+            <uri>model://female</uri>
+        </include>
+        <pose frame="">-2.0 0.0 0 0 0 0</pose>
+    </model>
+
     <model name="ConstructionCone_01_002">
         <include>
             <uri>model://ConstructionCone</uri>
