@@ -11,10 +11,10 @@ from launch.substitutions import PythonExpression
 
 from launch_ros.actions import Node
 
-def get_xacro_to_doc(xacro_file_path, mappings):
-    doc = xacro.parse(open(xacro_file_path))
-    xacro.process_doc(doc, mappings=mappings)
-    return doc
+# def get_xacro_to_doc(xacro_file_path, mappings):
+#     doc = xacro.parse(open(xacro_file_path))
+#     xacro.process_doc(doc, mappings=mappings)
+#     return doc
 
 def generate_launch_description():
     # Get bcr_bot package's share directory path
@@ -56,20 +56,6 @@ def generate_launch_description():
     )
 
     # Launch the spawn_entity node to spawn the robot in Gazebo
-    spawn_entity = Node(
-        package='gazebo_ros',
-        executable='spawn_entity.py',
-        output='screen',
-        arguments=[
-            '-topic', "/robot_description_01",
-            '-entity', PythonExpression(['"', robot_namespace, '_robot"']), #default enitity name _bcr_bot
-            '-z', "0.28",
-            '-x', position_x,
-            '-y', position_y,
-            '-Y', orientation_yaw
-        ]
-    )
-
     spawn_entity = Node(
         package='gazebo_ros',
         executable='spawn_entity.py',
