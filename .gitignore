@@ -1,5 +1,13 @@
 *README.md
 
+.vscode/
 build/
 install/
 log/
+Tmp/
+
+*yolov8n.pt
+*yolov8s.pt
+*yolov8m.pt
+*yolov8l.pt
+*yolov8x.pt
