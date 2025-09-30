@@ -49,8 +49,8 @@ class ObjectDetectorNode(Node):
         # Load YOLO model
         coco_model_path = os.path.join(get_package_share_directory('bcr_bot'), 'Detectionmodels', 'yolov8x.pt') # Pre-trained COCO model
         cone_model_path = os.path.join(get_package_share_directory('bcr_bot'), 'Detectionmodels', 'cone_detection.pt') # Custom-trained model for cones
-        self.cone_model = YOLO(cone_model_path)
-        self.coco_model = YOLO(coco_model_path)  # Pre-trained COCO model        
+        self.cone_model = YOLO(cone_model_path)  # Custom-trained model for cones
+        self.coco_model = YOLO(coco_model_path)  # Pre-trained COCO model
         self.get_logger().info("YOLO model loaded successfully.")
 
     def cam_info_callback(self, msg):

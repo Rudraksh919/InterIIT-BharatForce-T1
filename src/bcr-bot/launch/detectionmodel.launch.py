@@ -19,5 +19,6 @@ def generate_launch_description():
             package='bcr_bot',       # package name
             executable='objdetection.py',  # your Python node
             name='cone_detector_node',  # node name
+            output='screen',          # output to screen
         ),
     ])
