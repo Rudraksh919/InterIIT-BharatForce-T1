@@ -34,8 +34,13 @@ def generate_launch_description():
             join(bcr_bot_path, "launch", "bcr_bot_gazebo_spawn.launch.py")),
     )
 
-    return LaunchDescription([
+    # Include the detection model launch file
+    detectionmodel_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            join(bcr_bot_path, "launch", "detectionmodel.launch.py")),
+    )
 
+    return LaunchDescription([
         AppendEnvironmentVariable(
             name='GAZEBO_MODEL_PATH',
             value=join(bcr_bot_path, "models")),
@@ -47,5 +52,5 @@ def generate_launch_description():
         DeclareLaunchArgument('gui', default_value='true'),
         DeclareLaunchArgument('verbose', default_value='false'),
         DeclareLaunchArgument('use_sim_time', default_value=use_sim_time),
-        gazebo, spawn_bcr_bot_node
+        gazebo, spawn_bcr_bot_node, detectionmodel_launch
     ])
