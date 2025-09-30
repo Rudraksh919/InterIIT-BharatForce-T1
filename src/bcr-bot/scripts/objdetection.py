@@ -1,145 +1,159 @@
 #!/usr/bin/env python3
-
 import rclpy
 from rclpy.node import Node
-from ament_index_python.packages import get_package_share_directory
-import os
-from sensor_msgs.msg import Image, CameraInfo, PointCloud2
+from sensor_msgs.msg import Image, CameraInfo
 from geometry_msgs.msg import PointStamped
 from cv_bridge import CvBridge
 import cv2
-import torch
-import numpy as np
-import sensor_msgs_py.point_cloud2 as pc2
+from functools import partial
 from ultralytics import YOLO
+import os
+from ament_index_python.packages import get_package_share_directory
 
-
-class ObjectDetectorNode(Node):
+class SwarmObjectDetector(Node):
     def __init__(self):
-        super().__init__('obj_detector_node')
+        super().__init__('swarm_obj_detector')
 
-        # Subscribers
-        self.image_sub = self.create_subscription(
-            Image,
-            '/bcr_bot/kinect_camera/image_raw',
-            self.image_callback,
-            10
-        )
-        self.depth_sub = self.create_subscription(
-            Image,
-            '/bcr_bot/kinect_camera/depth/image_raw',
-            self.depth_callback,
-            10
-        )
-        self.cam_info_sub = self.create_subscription(
-            CameraInfo,
-            '/bcr_bot/kinect_camera/camera_info',
-            self.cam_info_callback,
-            10
-        )
+        # Parameter: list of robot namespaces (e.g. ["bcr_bot_1", "bcr_bot_2"])
+        self.declare_parameter('robot_namespaces', ['bcr_bot_1', 'bcr_bot_2', 'bcr_bot_3'])
+        self.robot_namespaces = self.get_parameter('robot_namespaces').get_parameter_value().string_array_value
+        if not self.robot_namespaces:
+            # fallback if param wasn't set as string_array
+            self.robot_namespaces = self.get_parameter('robot_namespaces').get_parameter_value().string_value.split(',')
 
-        # Publisher for 3D position
-        self.position_pub = self.create_publisher(
-            PointStamped, 'object_position', 10)
+        # Optionally model paths (custom or coco)
+        pkg_share = get_package_share_directory('bcr_bot')
+        cone_model_path = os.path.join(pkg_share, 'Detectionmodels', 'cone_detection.pt')
+        # load models once
+        self.get_logger().info('Loading YOLO models ...')
+        self.coco_model = YOLO("yolov8x.pt")   # ensure this path/model is accessible in your environment
+        self.cone_model = YOLO(cone_model_path)
+        self.get_logger().info('YOLO models loaded')
 
+        # cv bridge
         self.bridge = CvBridge()
-        self.depth_image = None
-        self.cam_intrinsics = None
 
-        # Load YOLO model
-        #coco_model_path = os.path.join(get_package_share_directory('bcr_bot'), 'Detectionmodels', 'yolov8x.pt') # Pre-trained COCO model
-        cone_model_path = os.path.join(get_package_share_directory('bcr_bot'), 'Detectionmodels', 'cone_detection.pt') # Custom-trained model for cones
-        self.cone_model = YOLO(cone_model_path)  # Custom-trained model for cones
-        self.coco_model = YOLO("yolov8x.pt")  # Pre-trained COCO model
-        self.get_logger().info("YOLO model loaded successfully.")
+        # Per-robot storage
+        self.robots = {}
+        for ns in self.robot_namespaces:
+            self.robots[ns] = {
+                'depth': None,
+                'intrinsics': None,
+                'image_topic': f'/{ns}/kinect_camera/image_raw',
+                'depth_topic': f'/{ns}/kinect_camera/depth/image_raw',
+                'caminfo_topic': f'/{ns}/kinect_camera/camera_info',
+                'pos_pub': self.create_publisher(PointStamped, f'/{ns}/object_position', 10)
+            }
+            # Create subscriptions with callbacks that know the namespace
+            self.create_subscription(Image, self.robots[ns]['image_topic'],
+                                     partial(self.image_callback, ns), 10)
+            self.create_subscription(Image, self.robots[ns]['depth_topic'],
+                                     partial(self.depth_callback, ns), 10)
+            self.create_subscription(CameraInfo, self.robots[ns]['caminfo_topic'],
+                                     partial(self.caminfo_callback, ns), 10)
 
-    def cam_info_callback(self, msg):
-        # Store camera intrinsics
-        self.cam_intrinsics = {
+        # Optionally show images (one window reused). If you have many robots, consider disabling display.
+        self.show_windows = True
+
+    # Callbacks bound to namespace via partial
+    def caminfo_callback(self, ns, msg):
+        intr = {
             'fx': msg.k[0],
             'fy': msg.k[4],
             'cx': msg.k[2],
             'cy': msg.k[5]
         }
+        self.robots[ns]['intrinsics'] = intr
 
-    def depth_callback(self, msg):
-        # Convert depth image to numpy array
-        self.depth_image = self.bridge.imgmsg_to_cv2(
-            msg, desired_encoding='passthrough')
+    def depth_callback(self, ns, msg):
+        try:
+            depth_cv = self.bridge.imgmsg_to_cv2(msg, desired_encoding='passthrough')
+        except Exception as e:
+            self.get_logger().warn(f"{ns} depth conversion failed: {e}")
+            return
+        self.robots[ns]['depth'] = depth_cv
 
-    def image_callback(self, msg):
-        if self.depth_image is None or self.cam_intrinsics is None:
-            return  # wait for both depth and camera info
+    def image_callback(self, ns, msg):
+        robot = self.robots[ns]
+        if robot['depth'] is None or robot['intrinsics'] is None:
+            return
 
-        # Convert RGB image
-        cv_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
+        try:
+            cv_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
+        except Exception as e:
+            self.get_logger().warn(f"{ns} image conversion failed: {e}")
+            return
 
-        # Run YOLO detection
-        coco_results = self.coco_model(cv_image , verbose=False)[0]
-        cone_results = self.cone_model(cv_image , verbose=False)[0]
-        all_results = [coco_results , cone_results]
+        # Run detectors (synchronous; if slow, consider moving inference to a thread pool)
+        # You can combine or prioritize models as desired
+        coco_res = self.coco_model(cv_image, verbose=False)[0]
+        cone_res = self.cone_model(cv_image, verbose=False)[0]
+        results = [(coco_res, 'coco'), (cone_res, 'cone')]
 
-        # Run YOLOv8 detection
-
-        for res in all_results:
-            if res.boxes is None:
+        for res, tag in results:
+            if getattr(res, 'boxes', None) is None:
                 continue
-
-            detections = res.boxes.xyxy.cpu().numpy()  # x1, y1, x2, y2
-            confidences = res.boxes.conf.cpu().numpy()
+            boxes = res.boxes.xyxy.cpu().numpy()
+            confs = res.boxes.conf.cpu().numpy()
             classes = res.boxes.cls.cpu().numpy()
 
-            for det, conf, cls in zip(detections, confidences, classes):
-                x1, y1, x2, y2 = det
+            for (x1, y1, x2, y2), conf, cls in zip(boxes, confs, classes):
                 cx = int((x1 + x2) / 2)
                 cy = int((y1 + y2) / 2)
 
-                # Get depth
-                z = self.depth_image[cy, cx]
-                if z == 0:
+                # Clip indices
+                h, w = robot['depth'].shape[:2]
+                cx_clamped = max(0, min(w - 1, cx))
+                cy_clamped = max(0, min(h - 1, cy))
+
+                z = float(robot['depth'][cy_clamped, cx_clamped])
+                if z == 0.0 or z != z:  # skip invalid
                     continue
 
-                fx = self.cam_intrinsics['fx']
-                fy = self.cam_intrinsics['fy']
-                cx_cam = self.cam_intrinsics['cx']
-                cy_cam = self.cam_intrinsics['cy']
+                fx = robot['intrinsics']['fx']
+                fy = robot['intrinsics']['fy']
+                cx_cam = robot['intrinsics']['cx']
+                cy_cam = robot['intrinsics']['cy']
 
                 X = (cx - cx_cam) * z / fx
                 Y = (cy - cy_cam) * z / fy
 
-                # Publish 3D point
-                point_msg = PointStamped()
-                point_msg.header.stamp = self.get_clock().now().to_msg()
-                point_msg.header.frame_id = 'kinect_camera_frame'
-                point_msg.point.x = float(X)
-                point_msg.point.y = float(Y)
-                point_msg.point.z = float(z)
-                self.position_pub.publish(point_msg)
+                # Publish
+                pt = PointStamped()
+                pt.header.stamp = self.get_clock().now().to_msg()
+                pt.header.frame_id = f'{ns}/kinect_camera_frame'
+                pt.point.x = float(X)
+                pt.point.y = float(Y)
+                pt.point.z = float(z)
+                robot['pos_pub'].publish(pt)
 
-                # Draw bounding box
-                cv2.rectangle(cv_image, (int(x1), int(y1)),
-                            (int(x2), int(y2)), (0, 255, 0), 2)
-                label = f"{self.coco_model.names[int(cls)] if res==coco_results else 'cone'} {conf:.2f}"
+                # Draw box & label on image
+                label = f"{(self.coco_model.names[int(cls)] if tag=='coco' else 'cone')} {conf:.2f}"
+                cv2.rectangle(cv_image, (int(x1), int(y1)), (int(x2), int(y2)), (0, 255, 0), 2)
                 cv2.putText(cv_image, label, (int(x1), int(y1)-10),
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
-
-                # Show 3D position
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
                 cv2.putText(cv_image, f"Pos: x={X:.2f} y={Y:.2f} z={z:.2f}m",
-                            (int(x1), int(y2)+20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 255), 2)
+                            (int(x1), int(y2)+20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,255), 2)
 
-                # Optional: show image
-                cv2.imshow("Object Detection", cv_image)
-                cv2.waitKey(1)
-
+        # Display (single window per robot can be heavy for many robots)
+        if self.show_windows:
+            winname = f"Detections - {ns}"
+            cv2.imshow(winname, cv_image)
+            cv2.waitKey(1)
 
 def main(args=None):
     rclpy.init(args=args)
-    node = ObjectDetectorNode()
-    rclpy.spin(node)
-    node.destroy_node()
-    cv2.destroyAllWindows()
-    rclpy.shutdown()
+    node = SwarmObjectDetector()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
+        cv2.destroyAllWindows()
 
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
+
+
