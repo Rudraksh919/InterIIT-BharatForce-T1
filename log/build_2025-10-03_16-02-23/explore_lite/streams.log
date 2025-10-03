@@ -1,0 +1,77 @@
+[0.212s] Invoking command in '/home/spicygen/Desktop/ros_ws/build/explore_lite': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/spicygen/Desktop/ros_ws/src/m-explore-ros2/explore -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/spicygen/Desktop/ros_ws/install/explore_lite
+[0.604s] -- BuilD for ROS2: humble
+[0.636s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.201s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.276s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[3.043s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.054s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.115s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.269s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.392s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.607s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.615s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.341s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.681s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[4.977s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[5.965s] -- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[5.976s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[5.979s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[6.055s] -- Found nav2_msgs: 1.1.18 (/opt/ros/humble/share/nav2_msgs/cmake)
+[6.166s] -- Found map_msgs: 2.1.0 (/opt/ros/humble/share/map_msgs/cmake)
+[6.224s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[6.297s] -- Found nav2_costmap_2d: 1.1.18 (/opt/ros/humble/share/nav2_costmap_2d/cmake)
+[7.761s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[7.949s] -- Found ament_cmake_gtest: 1.3.12 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[7.950s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[8.314s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[8.316s] -- Configured cppcheck include dirs: /home/spicygen/Desktop/ros_ws/src/m-explore-ros2/explore/include;$<BUILD_INTERFACE:/home/spicygen/Desktop/ros_ws/src/m-explore-ros2/explore/include>
+[8.316s] -- Configured cppcheck exclude dirs and/or files: 
+[8.317s] -- Added test 'flake8' to check Python code syntax and style conventions
+[8.318s] -- Added test 'lint_cmake' to check CMake code style
+[8.319s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[8.322s] -- Added test 'uncrustify' to check C / C++ code style
+[8.322s] -- Configured uncrustify additional arguments: 
+[8.323s] -- Added test 'xmllint' to check XML markup files
+[8.361s] -- Configuring done
+[10.431s] -- Generating done
+[10.494s] -- Build files have been written to: /home/spicygen/Desktop/ros_ws/build/explore_lite
+[10.515s] Invoked command in '/home/spicygen/Desktop/ros_ws/build/explore_lite' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/spicygen/Desktop/ros_ws/src/m-explore-ros2/explore -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/spicygen/Desktop/ros_ws/install/explore_lite
+[10.519s] Invoking command in '/home/spicygen/Desktop/ros_ws/build/explore_lite': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/spicygen/Desktop/ros_ws/build/explore_lite -- -j8 -l8
+[10.689s] [35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[10.717s] [ 20%] Built target gtest_main
+[10.777s] [35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[10.807s] [ 40%] Built target gtest
+[10.817s] [35m[1mConsolidate compiler generated dependencies of target explore[0m
+[10.881s] [ 50%] [32m[1mLinking CXX executable explore[0m
+[10.911s] [35m[1mConsolidate compiler generated dependencies of target test_explore[0m
+[10.943s] [ 70%] Built target test_explore
+[16.420s] [100%] Built target explore
+[16.444s] Invoked command in '/home/spicygen/Desktop/ros_ws/build/explore_lite' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/spicygen/Desktop/ros_ws/build/explore_lite -- -j8 -l8
+[16.448s] Invoking command in '/home/spicygen/Desktop/ros_ws/build/explore_lite': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/spicygen/Desktop/ros_ws/build/explore_lite
+[16.463s] -- Install configuration: ""
+[16.463s] -- Execute custom install script
+[16.464s] -- Symlinking: /home/spicygen/Desktop/ros_ws/install/explore_lite/include/explore//costmap_client.h
+[16.484s] -- Symlinking: /home/spicygen/Desktop/ros_ws/install/explore_lite/include/explore//costmap_tools.h
+[16.502s] -- Symlinking: /home/spicygen/Desktop/ros_ws/install/explore_lite/include/explore//explore.h
+[16.521s] -- Symlinking: /home/spicygen/Desktop/ros_ws/install/explore_lite/include/explore//frontier_search.h
+[16.540s] -- Symlinking: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/config/params.yaml
+[16.571s] -- Symlinking: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/config/params_costmap.yaml
+[16.591s] -- Symlinking: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/launch/explore.launch.py
+[16.610s] -- Symlinking: /home/spicygen/Desktop/ros_ws/install/explore_lite/lib/explore_lite/explore
+[16.629s] -- Symlinking: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/ament_index/resource_index/package_run_dependencies/explore_lite
+[16.648s] -- Symlinking: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/ament_index/resource_index/parent_prefix_path/explore_lite
+[16.667s] -- Symlinking: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/environment/ament_prefix_path.sh
+[16.687s] -- Symlinking: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/environment/ament_prefix_path.dsv
+[16.705s] -- Symlinking: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/environment/path.sh
+[16.724s] -- Symlinking: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/environment/path.dsv
+[16.743s] -- Symlinking: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/local_setup.bash
+[16.762s] -- Symlinking: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/local_setup.sh
+[16.780s] -- Symlinking: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/local_setup.zsh
+[16.800s] -- Symlinking: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/local_setup.dsv
+[16.819s] -- Symlinking: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/package.dsv
+[16.838s] -- Symlinking: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/ament_index/resource_index/packages/explore_lite
+[16.856s] -- Symlinking: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/cmake/ament_cmake_export_include_directories-extras.cmake
+[16.875s] -- Symlinking: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/cmake/explore_liteConfig.cmake
+[16.894s] -- Symlinking: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/cmake/explore_liteConfig-version.cmake
+[16.912s] -- Symlinking: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/package.xml
+[16.935s] Invoked command in '/home/spicygen/Desktop/ros_ws/build/explore_lite' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/spicygen/Desktop/ros_ws/build/explore_lite

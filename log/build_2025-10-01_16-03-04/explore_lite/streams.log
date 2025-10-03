@@ -1,0 +1,105 @@
+[0.111s] Invoking command in '/home/spicygen/Desktop/ros_ws/build/explore_lite': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/spicygen/Desktop/ros_ws/src/m-explore-ros2/explore -DCMAKE_INSTALL_PREFIX=/home/spicygen/Desktop/ros_ws/install/explore_lite
+[1.713s] -- The C compiler identification is GNU 11.4.0
+[2.557s] -- The CXX compiler identification is GNU 11.4.0
+[2.587s] -- Detecting C compiler ABI info
+[2.851s] -- Detecting C compiler ABI info - done
+[2.859s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.859s] -- Detecting C compile features
+[2.880s] -- Detecting C compile features - done
+[2.890s] -- Detecting CXX compiler ABI info
+[3.022s] -- Detecting CXX compiler ABI info - done
+[3.030s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.031s] -- Detecting CXX compile features
+[3.031s] -- Detecting CXX compile features - done
+[3.032s] -- BuilD for ROS2: humble
+[3.084s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.416s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.748s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[4.163s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[4.202s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.277s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[4.384s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.492s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.716s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[4.729s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[5.145s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[5.208s] -- Found FastRTPS: /opt/ros/humble/include  
+[5.261s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.420s] -- Looking for pthread.h
+[5.729s] -- Looking for pthread.h - found
+[5.729s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.835s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[5.836s] -- Found Threads: TRUE  
+[6.069s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[6.206s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[6.865s] -- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[6.881s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[6.882s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[6.883s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[6.920s] -- Found nav2_msgs: 1.1.18 (/opt/ros/humble/share/nav2_msgs/cmake)
+[6.984s] -- Found map_msgs: 2.1.0 (/opt/ros/humble/share/map_msgs/cmake)
+[7.055s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[7.206s] -- Found nav2_costmap_2d: 1.1.18 (/opt/ros/humble/share/nav2_costmap_2d/cmake)
+[7.886s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[7.991s] -- Found ament_cmake_gtest: 1.3.12 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[8.039s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[8.078s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[8.079s] -- Configured cppcheck include dirs: /home/spicygen/Desktop/ros_ws/src/m-explore-ros2/explore/include;$<BUILD_INTERFACE:/home/spicygen/Desktop/ros_ws/src/m-explore-ros2/explore/include>
+[8.079s] -- Configured cppcheck exclude dirs and/or files: 
+[8.081s] -- Added test 'flake8' to check Python code syntax and style conventions
+[8.084s] -- Added test 'lint_cmake' to check CMake code style
+[8.086s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[8.090s] -- Added test 'uncrustify' to check C / C++ code style
+[8.090s] -- Configured uncrustify additional arguments: 
+[8.092s] -- Added test 'xmllint' to check XML markup files
+[8.121s] -- Configuring done
+[8.864s] -- Generating done
+[8.879s] -- Build files have been written to: /home/spicygen/Desktop/ros_ws/build/explore_lite
+[8.893s] Invoked command in '/home/spicygen/Desktop/ros_ws/build/explore_lite' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/spicygen/Desktop/ros_ws/src/m-explore-ros2/explore -DCMAKE_INSTALL_PREFIX=/home/spicygen/Desktop/ros_ws/install/explore_lite
+[8.895s] Invoking command in '/home/spicygen/Desktop/ros_ws/build/explore_lite': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/spicygen/Desktop/ros_ws/build/explore_lite -- -j8 -l8
+[8.955s] [ 10%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[8.955s] [ 20%] [32mBuilding CXX object CMakeFiles/explore.dir/src/costmap_client.cpp.o[0m
+[8.956s] [ 30%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[8.957s] [ 40%] [32mBuilding CXX object CMakeFiles/explore.dir/src/frontier_search.cpp.o[0m
+[8.959s] [ 50%] [32mBuilding CXX object CMakeFiles/explore.dir/src/explore.cpp.o[0m
+[12.028s] [ 60%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[12.244s] [ 60%] Built target gtest_main
+[17.584s] [ 70%] [32m[1mLinking CXX static library libgtest.a[0m
+[17.714s] [ 70%] Built target gtest
+[17.761s] [ 80%] [32mBuilding CXX object CMakeFiles/test_explore.dir/test/test_explore.cpp.o[0m
+[20.922s] [ 90%] [32m[1mLinking CXX executable test_explore[0m
+[23.493s] [ 90%] Built target test_explore
+[41.621s] [100%] [32m[1mLinking CXX executable explore[0m
+[47.726s] [100%] Built target explore
+[47.750s] Invoked command in '/home/spicygen/Desktop/ros_ws/build/explore_lite' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/spicygen/Desktop/ros_ws/build/explore_lite -- -j8 -l8
+[47.753s] Invoking command in '/home/spicygen/Desktop/ros_ws/build/explore_lite': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/spicygen/Desktop/ros_ws/build/explore_lite
+[47.769s] -- Install configuration: ""
+[47.769s] -- Installing: /home/spicygen/Desktop/ros_ws/install/explore_lite/include/explore/
+[47.780s] -- Installing: /home/spicygen/Desktop/ros_ws/install/explore_lite/include/explore//frontier_search.h
+[47.780s] -- Installing: /home/spicygen/Desktop/ros_ws/install/explore_lite/include/explore//costmap_tools.h
+[47.780s] -- Installing: /home/spicygen/Desktop/ros_ws/install/explore_lite/include/explore//costmap_client.h
+[47.781s] -- Installing: /home/spicygen/Desktop/ros_ws/install/explore_lite/include/explore//explore.h
+[47.781s] -- Installing: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/config
+[47.781s] -- Installing: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/config/params.yaml
+[47.782s] -- Installing: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/config/params_costmap.yaml
+[47.782s] -- Installing: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/launch
+[47.782s] -- Installing: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/launch/explore.launch.py
+[47.782s] -- Installing: /home/spicygen/Desktop/ros_ws/install/explore_lite/lib/explore_lite/explore
+[47.798s] -- Set runtime path of "/home/spicygen/Desktop/ros_ws/install/explore_lite/lib/explore_lite/explore" to ""
+[47.799s] -- Installing: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/ament_index/resource_index/package_run_dependencies/explore_lite
+[47.799s] -- Installing: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/ament_index/resource_index/parent_prefix_path/explore_lite
+[47.800s] -- Installing: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/environment/ament_prefix_path.sh
+[47.800s] -- Installing: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/environment/ament_prefix_path.dsv
+[47.800s] -- Installing: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/environment/path.sh
+[47.801s] -- Installing: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/environment/path.dsv
+[47.801s] -- Installing: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/local_setup.bash
+[47.801s] -- Installing: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/local_setup.sh
+[47.802s] -- Installing: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/local_setup.zsh
+[47.802s] -- Installing: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/local_setup.dsv
+[47.802s] -- Installing: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/package.dsv
+[47.802s] -- Installing: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/ament_index/resource_index/packages/explore_lite
+[47.803s] -- Installing: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/cmake/ament_cmake_export_include_directories-extras.cmake
+[47.803s] -- Installing: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/cmake/explore_liteConfig.cmake
+[47.803s] -- Installing: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/cmake/explore_liteConfig-version.cmake
+[47.803s] -- Installing: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/package.xml
+[47.809s] Invoked command in '/home/spicygen/Desktop/ros_ws/build/explore_lite' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/spicygen/Desktop/ros_ws/build/explore_lite

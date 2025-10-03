@@ -82,7 +82,7 @@ def generate_launch_description():
     # )
 
     for i, pos in enumerate(robot_positions):
-        namespace = f"bcr_bot_{i+1}"
+        namespace = f"robot_{i+1}"
 
         # robot_state_publisher
         rsp_node = Node(

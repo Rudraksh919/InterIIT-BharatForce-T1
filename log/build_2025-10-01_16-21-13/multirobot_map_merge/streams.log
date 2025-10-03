@@ -1,0 +1,50 @@
+[0.185s] Invoking command in '/home/spicygen/Desktop/ros_ws/build/multirobot_map_merge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/spicygen/Desktop/ros_ws/build/multirobot_map_merge -- -j8 -l8
+[0.969s] [ 16%] Built target gtest_main
+[0.971s] [ 33%] Built target gtest
+[1.100s] [ 66%] Built target combine_grids
+[1.108s] [ 83%] Built target test_merging_pipeline
+[1.178s] [100%] Built target map_merge
+[1.274s] Invoked command in '/home/spicygen/Desktop/ros_ws/build/multirobot_map_merge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/spicygen/Desktop/ros_ws/build/multirobot_map_merge -- -j8 -l8
+[1.289s] Invoking command in '/home/spicygen/Desktop/ros_ws/build/multirobot_map_merge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/spicygen/Desktop/ros_ws/build/multirobot_map_merge
+[1.318s] -- Install configuration: ""
+[1.318s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/include/map_merge/
+[1.318s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/include/map_merge//map_merge.h
+[1.319s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/include/map_merge//ros1_names.hpp
+[1.319s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/launch
+[1.319s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/launch/map_merge.launch.py
+[1.320s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation
+[1.320s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/multi_tb3_simulation_launch.py
+[1.320s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/config
+[1.321s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/config/nav2_multirobot_params_2.yaml
+[1.322s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/config/nav2_multirobot_params_1.yaml
+[1.322s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/tb3_simulation_launch.py
+[1.322s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/bringup_launch.py
+[1.323s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/worlds
+[1.323s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/worlds/world_only.model
+[1.324s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/slam_toolbox.py
+[1.324s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/launch/map_merge.rviz
+[1.325s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/launch/from_map_server.launch.py
+[1.325s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/config
+[1.325s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/config/params.yaml
+[1.326s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/lib/libcombine_grids.a
+[1.326s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/lib/multirobot_map_merge/map_merge
+[1.327s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/environment/library_path.sh
+[1.327s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/environment/library_path.dsv
+[1.327s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/ament_index/resource_index/package_run_dependencies/multirobot_map_merge
+[1.327s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/ament_index/resource_index/parent_prefix_path/multirobot_map_merge
+[1.328s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/environment/ament_prefix_path.sh
+[1.328s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/environment/ament_prefix_path.dsv
+[1.328s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/environment/path.sh
+[1.328s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/environment/path.dsv
+[1.328s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/local_setup.bash
+[1.328s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/local_setup.sh
+[1.329s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/local_setup.zsh
+[1.329s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/local_setup.dsv
+[1.329s] -- Installing: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/package.dsv
+[1.329s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/ament_index/resource_index/packages/multirobot_map_merge
+[1.329s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.329s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/cmake/ament_cmake_export_libraries-extras.cmake
+[1.329s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/cmake/multirobot_map_mergeConfig.cmake
+[1.330s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/cmake/multirobot_map_mergeConfig-version.cmake
+[1.330s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/package.xml
+[1.358s] Invoked command in '/home/spicygen/Desktop/ros_ws/build/multirobot_map_merge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/spicygen/Desktop/ros_ws/build/multirobot_map_merge

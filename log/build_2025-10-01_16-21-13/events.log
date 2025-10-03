@@ -1,0 +1,1019 @@
+[0.000000] (-) TimerEvent: {}
+[0.000853] (bcr_bot) JobQueued: {'identifier': 'bcr_bot', 'dependencies': OrderedDict()}
+[0.001105] (explore_lite) JobQueued: {'identifier': 'explore_lite', 'dependencies': OrderedDict()}
+[0.001614] (multirobot_map_merge) JobQueued: {'identifier': 'multirobot_map_merge', 'dependencies': OrderedDict()}
+[0.001826] (openslam_gmapping) JobQueued: {'identifier': 'openslam_gmapping', 'dependencies': OrderedDict()}
+[0.001971] (slam_gmapping) JobQueued: {'identifier': 'slam_gmapping', 'dependencies': OrderedDict([('openslam_gmapping', '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping')])}
+[0.002141] (openslam_gmapping) JobStarted: {'identifier': 'openslam_gmapping'}
+[0.054386] (bcr_bot) JobStarted: {'identifier': 'bcr_bot'}
+[0.098371] (explore_lite) JobStarted: {'identifier': 'explore_lite'}
+[0.099008] (-) TimerEvent: {}
+[0.133756] (multirobot_map_merge) JobStarted: {'identifier': 'multirobot_map_merge'}
+[0.183874] (openslam_gmapping) JobProgress: {'identifier': 'openslam_gmapping', 'progress': 'cmake'}
+[0.187996] (openslam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '/home/spicygen/Desktop/ros_ws/src/slam_gmapping/openslam_gmapping', '-DCMAKE_INSTALL_PREFIX=/home/spicygen/Desktop/ros_ws/install/openslam_gmapping'], 'cwd': '/home/spicygen/Desktop/ros_ws/build/openslam_gmapping', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'spicygen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/spicygen'), ('OLDPWD', '/home/spicygen/Desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1496'), ('SYSTEMD_EXEC_PID', '1679'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '11180'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'spicygen'), ('JOURNAL_STREAM', '8:14597'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'spicygen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/spicygen-Lenovo-ideapad-330-15IKB:@/tmp/.ICE-unix/1651,unix/spicygen-Lenovo-ideapad-330-15IKB:/tmp/.ICE-unix/1651'), ('INVOCATION_ID', 'f686a8bd0ed24f548bafc2809ec40ad6'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.69UND3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:c7954a46-ac81-48a5-96e3-1ceb28531296'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/spicygen/Desktop/ros_ws/build/openslam_gmapping'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble')]), 'shell': False}
+[0.204371] (-) TimerEvent: {}
+[0.207803] (bcr_bot) JobProgress: {'identifier': 'bcr_bot', 'progress': 'cmake'}
+[0.211839] (bcr_bot) JobProgress: {'identifier': 'bcr_bot', 'progress': 'build'}
+[0.220411] (bcr_bot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/spicygen/Desktop/ros_ws/build/bcr_bot', '--', '-j8', '-l8'], 'cwd': '/home/spicygen/Desktop/ros_ws/build/bcr_bot', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'spicygen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/spicygen'), ('OLDPWD', '/home/spicygen/Desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1496'), ('SYSTEMD_EXEC_PID', '1679'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '11180'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'spicygen'), ('JOURNAL_STREAM', '8:14597'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'spicygen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/spicygen-Lenovo-ideapad-330-15IKB:@/tmp/.ICE-unix/1651,unix/spicygen-Lenovo-ideapad-330-15IKB:/tmp/.ICE-unix/1651'), ('INVOCATION_ID', 'f686a8bd0ed24f548bafc2809ec40ad6'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.69UND3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:c7954a46-ac81-48a5-96e3-1ceb28531296'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/spicygen/Desktop/ros_ws/build/bcr_bot'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble')]), 'shell': False}
+[0.238812] (explore_lite) JobProgress: {'identifier': 'explore_lite', 'progress': 'cmake'}
+[0.242370] (explore_lite) JobProgress: {'identifier': 'explore_lite', 'progress': 'build'}
+[0.246873] (explore_lite) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/spicygen/Desktop/ros_ws/build/explore_lite', '--', '-j8', '-l8'], 'cwd': '/home/spicygen/Desktop/ros_ws/build/explore_lite', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'spicygen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/spicygen'), ('OLDPWD', '/home/spicygen/Desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1496'), ('SYSTEMD_EXEC_PID', '1679'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '11180'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'spicygen'), ('JOURNAL_STREAM', '8:14597'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'spicygen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/spicygen-Lenovo-ideapad-330-15IKB:@/tmp/.ICE-unix/1651,unix/spicygen-Lenovo-ideapad-330-15IKB:/tmp/.ICE-unix/1651'), ('INVOCATION_ID', 'f686a8bd0ed24f548bafc2809ec40ad6'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.69UND3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:c7954a46-ac81-48a5-96e3-1ceb28531296'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/spicygen/Desktop/ros_ws/build/explore_lite'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble')]), 'shell': False}
+[0.287280] (multirobot_map_merge) JobProgress: {'identifier': 'multirobot_map_merge', 'progress': 'cmake'}
+[0.297041] (multirobot_map_merge) JobProgress: {'identifier': 'multirobot_map_merge', 'progress': 'build'}
+[0.307456] (multirobot_map_merge) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/spicygen/Desktop/ros_ws/build/multirobot_map_merge', '--', '-j8', '-l8'], 'cwd': '/home/spicygen/Desktop/ros_ws/build/multirobot_map_merge', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'spicygen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/spicygen'), ('OLDPWD', '/home/spicygen/Desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1496'), ('SYSTEMD_EXEC_PID', '1679'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '11180'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'spicygen'), ('JOURNAL_STREAM', '8:14597'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'spicygen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/spicygen-Lenovo-ideapad-330-15IKB:@/tmp/.ICE-unix/1651,unix/spicygen-Lenovo-ideapad-330-15IKB:/tmp/.ICE-unix/1651'), ('INVOCATION_ID', 'f686a8bd0ed24f548bafc2809ec40ad6'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.69UND3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:c7954a46-ac81-48a5-96e3-1ceb28531296'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/spicygen/Desktop/ros_ws/build/multirobot_map_merge'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble')]), 'shell': False}
+[0.321356] (-) TimerEvent: {}
+[0.422874] (-) TimerEvent: {}
+[0.524683] (-) TimerEvent: {}
+[0.564202] (bcr_bot) CommandEnded: {'returncode': 0}
+[0.571312] (bcr_bot) JobProgress: {'identifier': 'bcr_bot', 'progress': 'install'}
+[0.626505] (-) TimerEvent: {}
+[0.696577] (bcr_bot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/spicygen/Desktop/ros_ws/build/bcr_bot'], 'cwd': '/home/spicygen/Desktop/ros_ws/build/bcr_bot', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'spicygen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/spicygen'), ('OLDPWD', '/home/spicygen/Desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1496'), ('SYSTEMD_EXEC_PID', '1679'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '11180'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'spicygen'), ('JOURNAL_STREAM', '8:14597'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'spicygen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/spicygen-Lenovo-ideapad-330-15IKB:@/tmp/.ICE-unix/1651,unix/spicygen-Lenovo-ideapad-330-15IKB:/tmp/.ICE-unix/1651'), ('INVOCATION_ID', 'f686a8bd0ed24f548bafc2809ec40ad6'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.69UND3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:c7954a46-ac81-48a5-96e3-1ceb28531296'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/spicygen/Desktop/ros_ws/build/bcr_bot'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble')]), 'shell': False}
+[0.729628] (-) TimerEvent: {}
+[0.799916] (bcr_bot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.806050] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//launch\n'}
+[0.807379] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//launch/rviz.launch.py\n'}
+[0.808423] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//launch/bcr_bot_gazebo_spawn.launch.py\n'}
+[0.813438] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//launch/gz.launch.py\n'}
+[0.816387] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//launch/nav2.launch.py\n'}
+[0.817763] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//launch/gazebo.launch.py\n'}
+[0.826572] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//launch/main.launch.py\n'}
+[0.827968] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//launch/detectionmodel.launch.py\n'}
+[0.830497] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//launch/mapping.launch.py\n'}
+[0.833590] (-) TimerEvent: {}
+[0.839758] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//meshes\n'}
+[0.841942] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//meshes/kinect\n'}
+[0.847396] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//meshes/kinect/d415.dae\n'}
+[0.854449] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//meshes/kinect/kinect.jpg\n'}
+[0.855911] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//meshes/kinect/kinect.tga\n'}
+[0.857306] (explore_lite) StdoutLine: {'line': b'[ 20%] Built target gtest\n'}
+[0.858905] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//meshes/kinect/kinect.dae\n'}
+[0.860286] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//meshes/zed2\n'}
+[0.861626] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//meshes/zed2/zed2.DAE\n'}
+[0.862962] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//meshes/logo.png\n'}
+[0.864302] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//meshes/realsense_texture.png\n'}
+[0.865625] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//meshes/bcr_bot_mesh.dae\n'}
+[0.866942] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models\n'}
+[0.868293] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01\n'}
+[0.869598] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01/meshes\n'}
+[0.870924] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01/meshes/aws_robomaker_warehouse_DeskC_01_visual.DAE\n'}
+[0.872263] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01/meshes/aws_robomaker_warehouse_DeskC_01_collision.DAE\n'}
+[0.873591] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01/model.sdf\n'}
+[0.874921] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01/model.config\n'}
+[0.876326] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01/materials\n'}
+[0.877686] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01/materials/.DS_Store\n'}
+[0.878997] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01/materials/textures\n'}
+[0.880439] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_02.png\n'}
+[0.881792] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_04.png\n'}
+[0.883180] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_03.psd\n'}
+[0.884574] (explore_lite) StdoutLine: {'line': b'[ 40%] Built target gtest_main\n'}
+[0.891467] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_03.png\n'}
+[0.892858] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_01.png\n'}
+[0.894644] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringC_01\n'}
+[0.896394] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringC_01/meshes\n'}
+[0.897766] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringC_01/meshes/aws_robomaker_warehouse_ClutteringC_01_visual.DAE\n'}
+[0.899335] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringC_01/meshes/aws_robomaker_warehouse_ClutteringC_01_collision.DAE\n'}
+[0.900724] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringC_01/model.sdf\n'}
+[0.902105] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringC_01/model.config\n'}
+[0.905492] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringC_01/materials\n'}
+[0.910818] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringC_01/materials/textures\n'}
+[0.912304] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringC_01/materials/textures/aws_robomaker_warehouse_ClutteringC_02.png\n'}
+[0.914192] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringC_01/materials/textures/aws_robomaker_warehouse_ClutteringC_01.png\n'}
+[0.917969] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone\n'}
+[0.919310] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone/meshes\n'}
+[0.921440] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone/meshes/construction_cone.dae\n'}
+[0.922711] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone/model.sdf\n'}
+[0.923816] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone/model.config\n'}
+[0.924901] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone/materials\n'}
+[0.926044] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone/materials/textures\n'}
+[0.927800] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone/materials/textures/Construction_Cone_Diffuse.png\n'}
+[0.929175] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone/thumbnails\n'}
+[0.930462] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone/thumbnails/5.png\n'}
+[0.932081] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone/thumbnails/1.png\n'}
+[0.933919] (-) TimerEvent: {}
+[0.936033] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone/thumbnails/2.png\n'}
+[0.940088] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone/thumbnails/4.png\n'}
+[0.941401] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone/thumbnails/3.png\n'}
+[0.950694] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone/model-1_3.sdf\n'}
+[0.952828] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone/model-1_4.sdf\n'}
+[0.954178] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_WallB_01\n'}
+[0.955177] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_WallB_01/meshes\n'}
+[0.957217] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_WallB_01/meshes/aws_robomaker_warehouse_WallB_01_collision.DAE\n'}
+[0.958372] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_WallB_01/meshes/aws_robomaker_warehouse_WallB_01_visual.DAE\n'}
+[0.959376] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_WallB_01/model.sdf\n'}
+[0.960474] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_WallB_01/model.config\n'}
+[0.961455] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_WallB_01/materials\n'}
+[0.962404] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_WallB_01/materials/textures\n'}
+[0.963305] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_WallB_01/materials/textures/aws_robomaker_warehouse_WallB_01.png\n'}
+[0.964317] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female\n'}
+[0.965328] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/meshes\n'}
+[0.966331] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/meshes/casual_female.dae\n'}
+[0.967337] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/model.sdf\n'}
+[0.968573] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/model.config\n'}
+[0.971763] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/materials\n'}
+[0.972837] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/materials/textures\n'}
+[0.973847] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/materials/textures/young_lightskinned_female_diffuse.png\n'}
+[0.974837] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/materials/textures/female_casualsuit01_diffuse.png\n'}
+[0.975803] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/materials/textures/brown_eye.png\n'}
+[0.976748] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/materials/textures/ponytail01_diffuse.png\n'}
+[0.984474] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/materials/textures/eyebrow002.png\n'}
+[0.985668] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/materials/textures/female_casualsuit02_normal.png\n'}
+[0.986848] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/materials/textures/female_casualsuit02_diffuse.png\n'}
+[0.988001] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/materials/textures/eyelashes01.png\n'}
+[0.989045] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/materials/textures/casual_female.png\n'}
+[0.990071] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/materials/textures/female_casualsuit01_normal.png\n'}
+[0.991081] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/materials/textures/tongue01_diffuse.png\n'}
+[0.992154] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/materials/textures/shoes05_diffuse.png\n'}
+[0.993185] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/thumbnails\n'}
+[0.994405] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/thumbnails/5.png\n'}
+[0.995573] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/thumbnails/1.png\n'}
+[0.997131] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/thumbnails/2.png\n'}
+[0.998429] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/thumbnails/4.png\n'}
+[0.999620] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/thumbnails/3.png\n'}
+[1.000856] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfF_01\n'}
+[1.001991] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfF_01/meshes\n'}
+[1.003041] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfF_01/meshes/aws_robomaker_warehouse_ShelfF_01_collision.DAE\n'}
+[1.004617] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfF_01/meshes/aws_robomaker_warehouse_ShelfF_01_visual.DAE\n'}
+[1.006212] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfF_01/model.sdf\n'}
+[1.007716] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfF_01/model.config\n'}
+[1.009162] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfF_01/materials\n'}
+[1.012100] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfF_01/materials/textures\n'}
+[1.013653] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfF_01/materials/textures/aws_robomaker_warehouse_ShelfF_01.png\n'}
+[1.016520] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfF_01/materials/textures/aws_robomaker_warehouse_ShelfF_02.png\n'}
+[1.018316] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfF_01/materials/textures/aws_robomaker_warehouse_ShelfF_03.png\n'}
+[1.019419] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01\n'}
+[1.021372] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01/meshes\n'}
+[1.022566] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01/meshes/aws_robomaker_warehouse_ClutteringA_01_collision.DAE\n'}
+[1.023531] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01/meshes/aws_robomaker_warehouse_ClutteringA_01_visual.DAE\n'}
+[1.024543] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01/.DS_Store\n'}
+[1.025526] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01/model.sdf\n'}
+[1.026628] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01/model.config\n'}
+[1.028485] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01/materials\n'}
+[1.029982] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01/materials/.DS_Store\n'}
+[1.031046] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01/materials/textures\n'}
+[1.033894] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01/materials/textures/.DS_Store\n'}
+[1.035123] (-) TimerEvent: {}
+[1.036108] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01/materials/textures/aws_robomaker_warehouse_ClutteringA_02.png\n'}
+[1.038070] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01/materials/textures/aws_robomaker_warehouse_ClutteringA_01.png\n'}
+[1.038813] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01/materials/textures/aws_robomaker_warehouse_ClutteringA_03.png\n'}
+[1.039482] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_PalletJackB_01\n'}
+[1.040064] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_PalletJackB_01/meshes\n'}
+[1.040695] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_PalletJackB_01/meshes/aws_robomaker_warehouse_PalletJackB_01_collision.DAE\n'}
+[1.041695] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_PalletJackB_01/meshes/aws_robomaker_warehouse_PalletJackB_01_visual.DAE\n'}
+[1.042457] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_PalletJackB_01/.DS_Store\n'}
+[1.043605] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_PalletJackB_01/model.sdf\n'}
+[1.044635] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_PalletJackB_01/model.config\n'}
+[1.045798] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_PalletJackB_01/materials\n'}
+[1.046555] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_PalletJackB_01/materials/.DS_Store\n'}
+[1.047557] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_PalletJackB_01/materials/textures\n'}
+[1.048501] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_PalletJackB_01/materials/textures/aws_robomaker_warehouse_PalletJackB_01.png\n'}
+[1.049103] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_PalletJackB_01/materials/textures/aws_robomaker_warehouse_PalletJackB_02.png\n'}
+[1.049743] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringD_01\n'}
+[1.050322] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringD_01/meshes\n'}
+[1.050890] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringD_01/meshes/aws_robomaker_warehouse_ClutteringD_01_visual.DAE\n'}
+[1.052123] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringD_01/meshes/aws_robomaker_warehouse_ClutteringD_01_collision.DAE\n'}
+[1.055084] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringD_01/model.sdf\n'}
+[1.056607] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringD_01/model.config\n'}
+[1.058072] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringD_01/materials\n'}
+[1.059552] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringD_01/materials/textures\n'}
+[1.061003] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringD_01/materials/textures/aws_robomaker_warehouse_ClutteringD_02.png\n'}
+[1.062526] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringD_01/materials/textures/aws_robomaker_warehouse_ClutteringD_01.png\n'}
+[1.063971] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_TrashCanC_01\n'}
+[1.065927] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_TrashCanC_01/meshes\n'}
+[1.067445] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_TrashCanC_01/meshes/aws_robomaker_warehouse_TrashCanC_01_collision.DAE\n'}
+[1.068956] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_TrashCanC_01/meshes/aws_robomaker_warehouse_TrashCanC_01_visual.DAE\n'}
+[1.070421] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_TrashCanC_01/model.sdf\n'}
+[1.072978] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_TrashCanC_01/model.config\n'}
+[1.074451] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_TrashCanC_01/materials\n'}
+[1.075880] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_TrashCanC_01/materials/textures\n'}
+[1.077823] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_TrashCanC_01/materials/textures/aws_robomaker_warehouse_TrashCanC_01.png\n'}
+[1.079528] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfD_01\n'}
+[1.081022] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfD_01/meshes\n'}
+[1.082460] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfD_01/meshes/aws_robomaker_warehouse_ShelfD_01_visual.DAE\n'}
+[1.086695] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfD_01/meshes/aws_robomaker_warehouse_ShelfD_01_collision.DAE\n'}
+[1.088560] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfD_01/model.sdf\n'}
+[1.090649] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfD_01/model.config\n'}
+[1.091850] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfD_01/materials\n'}
+[1.092926] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfD_01/materials/textures\n'}
+[1.093968] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfD_01/materials/textures/aws_robomaker_warehouse_ShelfD_01.png\n'}
+[1.094991] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfD_01/materials/textures/aws_robomaker_warehouse_ShelfD_03.png\n'}
+[1.096180] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfD_01/materials/textures/aws_robomaker_warehouse_ShelfD_02.png\n'}
+[1.097184] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfD_01/materials/textures/aws_robomaker_warehouse_ShelfD_04.png\n'}
+[1.098150] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_GroundB_01\n'}
+[1.099089] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_GroundB_01/meshes\n'}
+[1.100088] (multirobot_map_merge) StdoutLine: {'line': b'[ 16%] Built target gtest_main\n'}
+[1.103504] (multirobot_map_merge) StdoutLine: {'line': b'[ 33%] Built target gtest\n'}
+[1.104945] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_GroundB_01/meshes/aws_robomaker_warehouse_GroundB_01_collision.DAE\n'}
+[1.107551] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_GroundB_01/meshes/aws_robomaker_warehouse_GroundB_01_visual.DAE\n'}
+[1.111525] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_GroundB_01/model.sdf\n'}
+[1.112601] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_GroundB_01/model.config\n'}
+[1.113622] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_GroundB_01/materials\n'}
+[1.114616] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_GroundB_01/materials/textures\n'}
+[1.115842] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_GroundB_01/materials/textures/aws_robomaker_warehouse_GroundB_01.png\n'}
+[1.117122] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_GroundB_01/materials/textures/aws_robomaker_warehouse_GroundB_02.png\n'}
+[1.127969] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Lamp_01\n'}
+[1.129538] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Lamp_01/meshes\n'}
+[1.130904] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Lamp_01/meshes/aws_robomaker_warehouse_Lamp_01_collision.DAE\n'}
+[1.132302] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Lamp_01/meshes/aws_robomaker_warehouse_Lamp_01_visual.DAE\n'}
+[1.133307] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Lamp_01/model.sdf\n'}
+[1.134069] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Lamp_01/model.config\n'}
+[1.135355] (-) TimerEvent: {}
+[1.137165] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Lamp_01/materials\n'}
+[1.139344] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Lamp_01/materials/textures\n'}
+[1.140822] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Lamp_01/materials/textures/aws_robomaker_warehouse_Lamp_01.png\n'}
+[1.145599] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Bucket_01\n'}
+[1.148560] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Bucket_01/meshes\n'}
+[1.150999] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Bucket_01/meshes/aws_robomaker_warehouse_Bucket_01_visual.DAE\n'}
+[1.153193] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Bucket_01/meshes/aws_robomaker_warehouse_Bucket_01_collision.DAE\n'}
+[1.154825] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Bucket_01/.DS_Store\n'}
+[1.156284] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Bucket_01/model.sdf\n'}
+[1.158125] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Bucket_01/model.config\n'}
+[1.159527] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Bucket_01/materials\n'}
+[1.161089] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Bucket_01/materials/.DS_Store\n'}
+[1.163327] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Bucket_01/materials/textures\n'}
+[1.164963] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Bucket_01/materials/textures/aws_robomaker_warehouse_Bucket_01.png\n'}
+[1.166049] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_RoofB_01\n'}
+[1.167155] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_RoofB_01/meshes\n'}
+[1.168158] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_RoofB_01/meshes/aws_robomaker_warehouse_RoofB_01_visual.DAE\n'}
+[1.169098] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_RoofB_01/meshes/aws_robomaker_warehouse_RoofB_01_collision.DAE\n'}
+[1.170043] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_RoofB_01/model.sdf\n'}
+[1.170995] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_RoofB_01/model.config\n'}
+[1.171952] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_RoofB_01/materials\n'}
+[1.172935] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_RoofB_01/materials/textures\n'}
+[1.173899] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_RoofB_01/materials/textures/aws_robomaker_warehouse_RoofB_01.png\n'}
+[1.174850] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01\n'}
+[1.175808] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01/meshes\n'}
+[1.176750] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01/meshes/aws_robomaker_warehouse_ShelfE_01_visual.DAE\n'}
+[1.177733] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01/meshes/aws_robomaker_warehouse_ShelfE_01_collision.DAE\n'}
+[1.178702] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01/.DS_Store\n'}
+[1.179685] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01/model.sdf\n'}
+[1.180744] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01/model.config\n'}
+[1.181706] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01/materials\n'}
+[1.182688] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01/materials/.DS_Store\n'}
+[1.184133] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01/materials/textures\n'}
+[1.185136] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01/materials/textures/aws_robomaker_warehouse_ShelfE_01.png\n'}
+[1.186121] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01/materials/textures/aws_robomaker_warehouse_ShelfE_02.png\n'}
+[1.187140] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01/materials/textures/aws_robomaker_warehouse_ShelfE_04.png\n'}
+[1.188531] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01/materials/textures/aws_robomaker_warehouse_ShelfE_03.png\n'}
+[1.189955] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//urdf\n'}
+[1.191107] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//urdf/bcr_bot.xacro\n'}
+[1.192044] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//urdf/multi_gazebo.xacro\n'}
+[1.192994] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//urdf/multi_bcr_bot.xacro\n'}
+[1.194838] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//urdf/gz.xacro\n'}
+[1.196297] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//urdf/gazebo.xacro\n'}
+[1.197492] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//urdf/ign.xacro\n'}
+[1.198718] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//urdf/materials.xacro\n'}
+[1.199740] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//urdf/macros.xacro\n'}
+[1.201186] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//worlds\n'}
+[1.202207] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//worlds/empty.sdf\n'}
+[1.203372] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//worlds/small_warehouse.sdf\n'}
+[1.204513] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//rviz\n'}
+[1.205612] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//rviz/entire_setup.rviz\n'}
+[1.206955] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//rviz/map.rviz\n'}
+[1.208116] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//Detectionmodels\n'}
+[1.209701] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//Detectionmodels/cone_detection.pt\n'}
+[1.211035] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//Detectionmodels/cone_detection.onnx\n'}
+[1.212573] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/config\n'}
+[1.213852] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/config/bcr_map.yaml\n'}
+[1.215314] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/config/mapper_params_online_async.yaml\n'}
+[1.216594] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/config/bcr_map.pgm\n'}
+[1.217918] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/config/nav2_params.yaml\n'}
+[1.219212] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/lib/bcr_bot/remapper.py\n'}
+[1.220057] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/lib/bcr_bot/objdetection.py\n'}
+[1.220708] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/ament_index/resource_index/package_run_dependencies/bcr_bot\n'}
+[1.221295] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/ament_index/resource_index/parent_prefix_path/bcr_bot\n'}
+[1.222364] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/environment/ament_prefix_path.sh\n'}
+[1.223209] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/environment/ament_prefix_path.dsv\n'}
+[1.224093] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/environment/path.sh\n'}
+[1.224870] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/environment/path.dsv\n'}
+[1.225744] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/local_setup.bash\n'}
+[1.227342] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/local_setup.sh\n'}
+[1.227991] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/local_setup.zsh\n'}
+[1.230047] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/local_setup.dsv\n'}
+[1.230836] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/package.dsv\n'}
+[1.231497] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/ament_index/resource_index/packages/bcr_bot\n'}
+[1.232079] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/cmake/bcr_botConfig.cmake\n'}
+[1.232687] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/cmake/bcr_botConfig-version.cmake\n'}
+[1.233213] (bcr_bot) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/package.xml\n'}
+[1.233910] (multirobot_map_merge) StdoutLine: {'line': b'[ 66%] Built target combine_grids\n'}
+[1.234570] (openslam_gmapping) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.235770] (-) TimerEvent: {}
+[1.236789] (bcr_bot) CommandEnded: {'returncode': 0}
+[1.239644] (explore_lite) StdoutLine: {'line': b'[ 80%] Built target explore\n'}
+[1.240431] (explore_lite) StdoutLine: {'line': b'[100%] Built target test_explore\n'}
+[1.241092] (multirobot_map_merge) StdoutLine: {'line': b'[ 83%] Built target test_merging_pipeline\n'}
+[1.311571] (multirobot_map_merge) StdoutLine: {'line': b'[100%] Built target map_merge\n'}
+[1.337966] (-) TimerEvent: {}
+[1.359121] (bcr_bot) JobEnded: {'identifier': 'bcr_bot', 'rc': 0}
+[1.367351] (explore_lite) CommandEnded: {'returncode': 0}
+[1.372629] (explore_lite) JobProgress: {'identifier': 'explore_lite', 'progress': 'install'}
+[1.381940] (explore_lite) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/spicygen/Desktop/ros_ws/build/explore_lite'], 'cwd': '/home/spicygen/Desktop/ros_ws/build/explore_lite', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'spicygen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/spicygen'), ('OLDPWD', '/home/spicygen/Desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1496'), ('SYSTEMD_EXEC_PID', '1679'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '11180'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'spicygen'), ('JOURNAL_STREAM', '8:14597'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'spicygen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/spicygen-Lenovo-ideapad-330-15IKB:@/tmp/.ICE-unix/1651,unix/spicygen-Lenovo-ideapad-330-15IKB:/tmp/.ICE-unix/1651'), ('INVOCATION_ID', 'f686a8bd0ed24f548bafc2809ec40ad6'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.69UND3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:c7954a46-ac81-48a5-96e3-1ceb28531296'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/spicygen/Desktop/ros_ws/build/explore_lite'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble')]), 'shell': False}
+[1.406120] (multirobot_map_merge) CommandEnded: {'returncode': 0}
+[1.411692] (multirobot_map_merge) JobProgress: {'identifier': 'multirobot_map_merge', 'progress': 'install'}
+[1.421286] (multirobot_map_merge) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/spicygen/Desktop/ros_ws/build/multirobot_map_merge'], 'cwd': '/home/spicygen/Desktop/ros_ws/build/multirobot_map_merge', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'spicygen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/spicygen'), ('OLDPWD', '/home/spicygen/Desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1496'), ('SYSTEMD_EXEC_PID', '1679'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '11180'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'spicygen'), ('JOURNAL_STREAM', '8:14597'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'spicygen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/spicygen-Lenovo-ideapad-330-15IKB:@/tmp/.ICE-unix/1651,unix/spicygen-Lenovo-ideapad-330-15IKB:/tmp/.ICE-unix/1651'), ('INVOCATION_ID', 'f686a8bd0ed24f548bafc2809ec40ad6'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.69UND3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:c7954a46-ac81-48a5-96e3-1ceb28531296'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/spicygen/Desktop/ros_ws/build/multirobot_map_merge'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble')]), 'shell': False}
+[1.436721] (explore_lite) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.437560] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/include/explore/\n'}
+[1.437959] (-) TimerEvent: {}
+[1.438543] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/include/explore//frontier_search.h\n'}
+[1.439050] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/include/explore//costmap_tools.h\n'}
+[1.439434] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/include/explore//costmap_client.h\n'}
+[1.439757] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/include/explore//explore.h\n'}
+[1.440089] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/config\n'}
+[1.440472] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/config/params.yaml\n'}
+[1.441086] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/config/params_costmap.yaml\n'}
+[1.441527] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/launch\n'}
+[1.441863] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/launch/explore.launch.py\n'}
+[1.442198] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/lib/explore_lite/explore\n'}
+[1.442709] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/ament_index/resource_index/package_run_dependencies/explore_lite\n'}
+[1.443066] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/ament_index/resource_index/parent_prefix_path/explore_lite\n'}
+[1.443370] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/environment/ament_prefix_path.sh\n'}
+[1.443665] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/environment/ament_prefix_path.dsv\n'}
+[1.443892] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/environment/path.sh\n'}
+[1.444133] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/environment/path.dsv\n'}
+[1.444373] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/local_setup.bash\n'}
+[1.444584] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/local_setup.sh\n'}
+[1.444782] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/local_setup.zsh\n'}
+[1.444982] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/local_setup.dsv\n'}
+[1.445189] (explore_lite) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/package.dsv\n'}
+[1.445513] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/ament_index/resource_index/packages/explore_lite\n'}
+[1.445745] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.445966] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/cmake/explore_liteConfig.cmake\n'}
+[1.446183] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/cmake/explore_liteConfig-version.cmake\n'}
+[1.446919] (explore_lite) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/package.xml\n'}
+[1.448386] (explore_lite) CommandEnded: {'returncode': 0}
+[1.451411] (multirobot_map_merge) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.451744] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/include/map_merge/\n'}
+[1.452003] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/include/map_merge//map_merge.h\n'}
+[1.452295] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/include/map_merge//ros1_names.hpp\n'}
+[1.452846] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/launch\n'}
+[1.453099] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/launch/map_merge.launch.py\n'}
+[1.453373] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation\n'}
+[1.453640] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/multi_tb3_simulation_launch.py\n'}
+[1.453881] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/config\n'}
+[1.454115] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/config/nav2_multirobot_params_2.yaml\n'}
+[1.454721] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/config/nav2_multirobot_params_1.yaml\n'}
+[1.455702] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/tb3_simulation_launch.py\n'}
+[1.455971] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/bringup_launch.py\n'}
+[1.456203] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/worlds\n'}
+[1.457074] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/worlds/world_only.model\n'}
+[1.457460] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/launch/tb3_simulation/slam_toolbox.py\n'}
+[1.457930] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/launch/map_merge.rviz\n'}
+[1.458290] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/launch/from_map_server.launch.py\n'}
+[1.458700] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/config\n'}
+[1.459084] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/config/params.yaml\n'}
+[1.459465] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/lib/libcombine_grids.a\n'}
+[1.459984] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/lib/multirobot_map_merge/map_merge\n'}
+[1.460281] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/environment/library_path.sh\n'}
+[1.460756] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/environment/library_path.dsv\n'}
+[1.460930] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/ament_index/resource_index/package_run_dependencies/multirobot_map_merge\n'}
+[1.461104] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/ament_index/resource_index/parent_prefix_path/multirobot_map_merge\n'}
+[1.461264] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/environment/ament_prefix_path.sh\n'}
+[1.461523] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/environment/ament_prefix_path.dsv\n'}
+[1.461663] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/environment/path.sh\n'}
+[1.461799] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/environment/path.dsv\n'}
+[1.461931] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/local_setup.bash\n'}
+[1.462122] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/local_setup.sh\n'}
+[1.462312] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/local_setup.zsh\n'}
+[1.462532] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/local_setup.dsv\n'}
+[1.462666] (multirobot_map_merge) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/package.dsv\n'}
+[1.462799] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/ament_index/resource_index/packages/multirobot_map_merge\n'}
+[1.462930] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.463063] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.463193] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/cmake/multirobot_map_mergeConfig.cmake\n'}
+[1.463408] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/cmake/multirobot_map_mergeConfig-version.cmake\n'}
+[1.463556] (multirobot_map_merge) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/package.xml\n'}
+[1.466031] (openslam_gmapping) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.484739] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.488274] (explore_lite) JobEnded: {'identifier': 'explore_lite', 'rc': 0}
+[1.490174] (multirobot_map_merge) CommandEnded: {'returncode': 0}
+[1.517093] (multirobot_map_merge) JobEnded: {'identifier': 'multirobot_map_merge', 'rc': 0}
+[1.538126] (-) TimerEvent: {}
+[1.638569] (-) TimerEvent: {}
+[1.653477] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.672472] (openslam_gmapping) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.672957] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.673835] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.680189] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.738739] (-) TimerEvent: {}
+[1.839178] (-) TimerEvent: {}
+[1.847981] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.865109] (openslam_gmapping) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.865797] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.866839] (openslam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.939534] (-) TimerEvent: {}
+[2.001507] (openslam_gmapping) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.039688] (-) TimerEvent: {}
+[2.140094] (-) TimerEvent: {}
+[2.240468] (-) TimerEvent: {}
+[2.338271] (openslam_gmapping) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.340552] (-) TimerEvent: {}
+[2.440923] (-) TimerEvent: {}
+[2.541416] (-) TimerEvent: {}
+[2.642027] (-) TimerEvent: {}
+[2.742406] (-) TimerEvent: {}
+[2.807443] (openslam_gmapping) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.839042] (openslam_gmapping) StdoutLine: {'line': b'-- Generating done\n'}
+[2.842502] (-) TimerEvent: {}
+[2.849745] (openslam_gmapping) StdoutLine: {'line': b'-- Build files have been written to: /home/spicygen/Desktop/ros_ws/build/openslam_gmapping\n'}
+[2.860525] (openslam_gmapping) CommandEnded: {'returncode': 0}
+[2.861560] (openslam_gmapping) JobProgress: {'identifier': 'openslam_gmapping', 'progress': 'build'}
+[2.863285] (openslam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/spicygen/Desktop/ros_ws/build/openslam_gmapping', '--', '-j8', '-l8'], 'cwd': '/home/spicygen/Desktop/ros_ws/build/openslam_gmapping', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'spicygen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/spicygen'), ('OLDPWD', '/home/spicygen/Desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1496'), ('SYSTEMD_EXEC_PID', '1679'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '11180'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'spicygen'), ('JOURNAL_STREAM', '8:14597'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'spicygen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/spicygen-Lenovo-ideapad-330-15IKB:@/tmp/.ICE-unix/1651,unix/spicygen-Lenovo-ideapad-330-15IKB:/tmp/.ICE-unix/1651'), ('INVOCATION_ID', 'f686a8bd0ed24f548bafc2809ec40ad6'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.69UND3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:c7954a46-ac81-48a5-96e3-1ceb28531296'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/spicygen/Desktop/ros_ws/build/openslam_gmapping'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble')]), 'shell': False}
+[2.942701] (-) TimerEvent: {}
+[2.962606] (openslam_gmapping) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object sensor/sensor_base/CMakeFiles/sensor_base.dir/sensor.cpp.o\x1b[0m\n'}
+[2.963063] (openslam_gmapping) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object utils/CMakeFiles/utils.dir/movement.cpp.o\x1b[0m\n'}
+[2.963422] (openslam_gmapping) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object utils/CMakeFiles/utils.dir/stat.cpp.o\x1b[0m\n'}
+[2.963734] (openslam_gmapping) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object sensor/sensor_base/CMakeFiles/sensor_base.dir/sensorreading.cpp.o\x1b[0m\n'}
+[3.042880] (-) TimerEvent: {}
+[3.143339] (-) TimerEvent: {}
+[3.243858] (-) TimerEvent: {}
+[3.344431] (-) TimerEvent: {}
+[3.444955] (-) TimerEvent: {}
+[3.522861] (openslam_gmapping) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking CXX static library libsensor_base.a\x1b[0m\n'}
+[3.545105] (-) TimerEvent: {}
+[3.592998] (openslam_gmapping) StdoutLine: {'line': b'[ 22%] Built target sensor_base\n'}
+[3.636758] (openslam_gmapping) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object sensor/sensor_range/CMakeFiles/sensor_range.dir/rangereading.cpp.o\x1b[0m\n'}
+[3.637224] (openslam_gmapping) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/odometryreading.cpp.o\x1b[0m\n'}
+[3.645276] (-) TimerEvent: {}
+[3.645884] (openslam_gmapping) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object sensor/sensor_range/CMakeFiles/sensor_range.dir/rangesensor.cpp.o\x1b[0m\n'}
+[3.646323] (openslam_gmapping) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/odometrysensor.cpp.o\x1b[0m\n'}
+[3.714587] (openslam_gmapping) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX static library libutils.a\x1b[0m\n'}
+[3.745414] (-) TimerEvent: {}
+[3.784774] (openslam_gmapping) StdoutLine: {'line': b'[ 45%] Built target utils\n'}
+[3.845566] (-) TimerEvent: {}
+[3.946095] (-) TimerEvent: {}
+[4.046652] (-) TimerEvent: {}
+[4.147178] (-) TimerEvent: {}
+[4.247714] (-) TimerEvent: {}
+[4.321003] (openslam_gmapping) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX static library libsensor_odometry.a\x1b[0m\n'}
+[4.347866] (-) TimerEvent: {}
+[4.392859] (openslam_gmapping) StdoutLine: {'line': b'[ 50%] Built target sensor_odometry\n'}
+[4.448022] (-) TimerEvent: {}
+[4.548545] (-) TimerEvent: {}
+[4.648975] (-) TimerEvent: {}
+[4.673084] (openslam_gmapping) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX static library libsensor_range.a\x1b[0m\n'}
+[4.741061] (openslam_gmapping) StdoutLine: {'line': b'[ 54%] Built target sensor_range\n'}
+[4.749110] (-) TimerEvent: {}
+[4.784089] (openslam_gmapping) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/scanmatcher.cpp.o\x1b[0m\n'}
+[4.784621] (openslam_gmapping) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/eig3.cpp.o\x1b[0m\n'}
+[4.785038] (openslam_gmapping) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/scanmatcherprocessor.cpp.o\x1b[0m\n'}
+[4.786851] (openslam_gmapping) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object scanmatcher/CMakeFiles/scanmatcher.dir/smmap.cpp.o\x1b[0m\n'}
+[4.849289] (-) TimerEvent: {}
+[4.949775] (-) TimerEvent: {}
+[5.050307] (-) TimerEvent: {}
+[5.150819] (-) TimerEvent: {}
+[5.251341] (-) TimerEvent: {}
+[5.351863] (-) TimerEvent: {}
+[5.452351] (-) TimerEvent: {}
+[5.552855] (-) TimerEvent: {}
+[5.653350] (-) TimerEvent: {}
+[5.753863] (-) TimerEvent: {}
+[5.854374] (-) TimerEvent: {}
+[5.954875] (-) TimerEvent: {}
+[6.055390] (-) TimerEvent: {}
+[6.155899] (-) TimerEvent: {}
+[6.256443] (-) TimerEvent: {}
+[6.356871] (-) TimerEvent: {}
+[6.457320] (-) TimerEvent: {}
+[6.557741] (-) TimerEvent: {}
+[6.658175] (-) TimerEvent: {}
+[6.758620] (-) TimerEvent: {}
+[6.859052] (-) TimerEvent: {}
+[6.959531] (-) TimerEvent: {}
+[7.060158] (-) TimerEvent: {}
+[7.160629] (-) TimerEvent: {}
+[7.261215] (-) TimerEvent: {}
+[7.361653] (-) TimerEvent: {}
+[7.462158] (-) TimerEvent: {}
+[7.562822] (-) TimerEvent: {}
+[7.629223] (openslam_gmapping) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX static library libscanmatcher.a\x1b[0m\n'}
+[7.663040] (-) TimerEvent: {}
+[7.704353] (openslam_gmapping) StdoutLine: {'line': b'[ 77%] Built target scanmatcher\n'}
+[7.751405] (openslam_gmapping) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor.cpp.o\x1b[0m\n'}
+[7.751967] (openslam_gmapping) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/gfsreader.cpp.o\x1b[0m\n'}
+[7.752556] (openslam_gmapping) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/gridslamprocessor_tree.cpp.o\x1b[0m\n'}
+[7.753115] (openslam_gmapping) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object gridfastslam/CMakeFiles/gridfastslam.dir/motionmodel.cpp.o\x1b[0m\n'}
+[7.763195] (-) TimerEvent: {}
+[7.863709] (-) TimerEvent: {}
+[7.964198] (-) TimerEvent: {}
+[8.064694] (-) TimerEvent: {}
+[8.165214] (-) TimerEvent: {}
+[8.265763] (-) TimerEvent: {}
+[8.366384] (-) TimerEvent: {}
+[8.466908] (-) TimerEvent: {}
+[8.567431] (-) TimerEvent: {}
+[8.667877] (-) TimerEvent: {}
+[8.768325] (-) TimerEvent: {}
+[8.868776] (-) TimerEvent: {}
+[8.969221] (-) TimerEvent: {}
+[9.069680] (-) TimerEvent: {}
+[9.170114] (-) TimerEvent: {}
+[9.270513] (-) TimerEvent: {}
+[9.370972] (-) TimerEvent: {}
+[9.471442] (-) TimerEvent: {}
+[9.571995] (-) TimerEvent: {}
+[9.672466] (-) TimerEvent: {}
+[9.773008] (-) TimerEvent: {}
+[9.873482] (-) TimerEvent: {}
+[9.973975] (-) TimerEvent: {}
+[10.074367] (-) TimerEvent: {}
+[10.174805] (-) TimerEvent: {}
+[10.275269] (-) TimerEvent: {}
+[10.375704] (-) TimerEvent: {}
+[10.476138] (-) TimerEvent: {}
+[10.576683] (-) TimerEvent: {}
+[10.677124] (-) TimerEvent: {}
+[10.777583] (-) TimerEvent: {}
+[10.878023] (-) TimerEvent: {}
+[10.978423] (-) TimerEvent: {}
+[11.078939] (-) TimerEvent: {}
+[11.158186] (openslam_gmapping) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX static library libgridfastslam.a\x1b[0m\n'}
+[11.179069] (-) TimerEvent: {}
+[11.230657] (openslam_gmapping) StdoutLine: {'line': b'[100%] Built target gridfastslam\n'}
+[11.253786] (openslam_gmapping) CommandEnded: {'returncode': 0}
+[11.255426] (openslam_gmapping) JobProgress: {'identifier': 'openslam_gmapping', 'progress': 'install'}
+[11.256888] (openslam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/spicygen/Desktop/ros_ws/build/openslam_gmapping'], 'cwd': '/home/spicygen/Desktop/ros_ws/build/openslam_gmapping', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'spicygen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/spicygen'), ('OLDPWD', '/home/spicygen/Desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1496'), ('SYSTEMD_EXEC_PID', '1679'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '11180'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'spicygen'), ('JOURNAL_STREAM', '8:14597'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'spicygen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/spicygen-Lenovo-ideapad-330-15IKB:@/tmp/.ICE-unix/1651,unix/spicygen-Lenovo-ideapad-330-15IKB:/tmp/.ICE-unix/1651'), ('INVOCATION_ID', 'f686a8bd0ed24f548bafc2809ec40ad6'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.69UND3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:c7954a46-ac81-48a5-96e3-1ceb28531296'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/spicygen/Desktop/ros_ws/build/openslam_gmapping'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble')]), 'shell': False}
+[11.272538] (openslam_gmapping) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.272939] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh\n'}
+[11.273259] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv\n'}
+[11.273617] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include/\n'}
+[11.273992] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping\n'}
+[11.274187] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/particlefilter\n'}
+[11.274389] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/particlefilter/particlefilter.h\n'}
+[11.274701] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/gridfastslam\n'}
+[11.274861] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/gridfastslam/motionmodel.h\n'}
+[11.275072] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/gridfastslam/gridslamprocessor.hxx\n'}
+[11.275213] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/gridfastslam/gridslamprocessor.h\n'}
+[11.275426] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/utils\n'}
+[11.275611] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/utils/commandline.h\n'}
+[11.275891] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/utils/macro_params.h\n'}
+[11.276173] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/utils/point.h\n'}
+[11.276410] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/utils/gvalues.h\n'}
+[11.276586] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/utils/stat.h\n'}
+[11.276770] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/utils/autoptr.h\n'}
+[11.276930] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/grid\n'}
+[11.277163] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/grid/map.h\n'}
+[11.277416] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/grid/array2d.h\n'}
+[11.277641] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/grid/accessstate.h\n'}
+[11.277863] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/grid/harray2d.h\n'}
+[11.278090] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/scanmatcher\n'}
+[11.278291] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/scanmatcher/icp.h\n'}
+[11.278511] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/scanmatcher/scanmatcher.h\n'}
+[11.278685] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/scanmatcher/smmap.h\n'}
+[11.278868] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/log\n'}
+[11.279047] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/log/sensorlog.h\n'}
+[11.279170] (-) TimerEvent: {}
+[11.279430] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/log/configuration.h\n'}
+[11.279695] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/sensor\n'}
+[11.279873] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_range\n'}
+[11.280007] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_range/rangereading.h\n'}
+[11.280246] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_range/rangesensor.h\n'}
+[11.280394] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_base\n'}
+[11.280578] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_base/sensor.h\n'}
+[11.280757] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_base/sensorreading.h\n'}
+[11.280932] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_odometry\n'}
+[11.281089] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_odometry/odometrysensor.h\n'}
+[11.281286] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include//gmapping/sensor/sensor_odometry/odometryreading.h\n'}
+[11.281767] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/ament_index/resource_index/package_run_dependencies/openslam_gmapping\n'}
+[11.282257] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/ament_index/resource_index/parent_prefix_path/openslam_gmapping\n'}
+[11.282601] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/environment/ament_prefix_path.sh\n'}
+[11.282902] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/environment/ament_prefix_path.dsv\n'}
+[11.283139] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/environment/path.sh\n'}
+[11.283425] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/environment/path.dsv\n'}
+[11.283733] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/local_setup.bash\n'}
+[11.283997] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/local_setup.sh\n'}
+[11.284362] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/local_setup.zsh\n'}
+[11.284627] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/local_setup.dsv\n'}
+[11.284871] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/package.dsv\n'}
+[11.285267] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/ament_index/resource_index/packages/openslam_gmapping\n'}
+[11.285589] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[11.285945] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[11.286197] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/cmake/openslam_gmappingConfig.cmake\n'}
+[11.286482] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/cmake/openslam_gmappingConfig-version.cmake\n'}
+[11.286756] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/package.xml\n'}
+[11.287430] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/lib/libgridfastslam.a\n'}
+[11.288346] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/lib/libscanmatcher.a\n'}
+[11.289092] (openslam_gmapping) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh\n'}
+[11.289339] (openslam_gmapping) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv\n'}
+[11.289672] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/lib/libsensor_base.a\n'}
+[11.290016] (openslam_gmapping) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh\n'}
+[11.290183] (openslam_gmapping) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv\n'}
+[11.290504] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/lib/libsensor_odometry.a\n'}
+[11.290826] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/lib/libsensor_range.a\n'}
+[11.291410] (openslam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/lib/libutils.a\n'}
+[11.291713] (openslam_gmapping) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.sh\n'}
+[11.291926] (openslam_gmapping) StdoutLine: {'line': b'-- Up-to-date: /home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/environment/library_path.dsv\n'}
+[11.295131] (openslam_gmapping) CommandEnded: {'returncode': 0}
+[11.321230] (openslam_gmapping) JobEnded: {'identifier': 'openslam_gmapping', 'rc': 0}
+[11.322120] (slam_gmapping) JobStarted: {'identifier': 'slam_gmapping'}
+[11.338468] (slam_gmapping) JobProgress: {'identifier': 'slam_gmapping', 'progress': 'cmake'}
+[11.340502] (slam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '/home/spicygen/Desktop/ros_ws/src/slam_gmapping/slam_gmapping', '-DCMAKE_INSTALL_PREFIX=/home/spicygen/Desktop/ros_ws/install/slam_gmapping'], 'cwd': '/home/spicygen/Desktop/ros_ws/build/slam_gmapping', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'spicygen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/lib:/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/spicygen'), ('OLDPWD', '/home/spicygen/Desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1496'), ('SYSTEMD_EXEC_PID', '1679'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '11180'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'spicygen'), ('JOURNAL_STREAM', '8:14597'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'spicygen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/spicygen-Lenovo-ideapad-330-15IKB:@/tmp/.ICE-unix/1651,unix/spicygen-Lenovo-ideapad-330-15IKB:/tmp/.ICE-unix/1651'), ('INVOCATION_ID', 'f686a8bd0ed24f548bafc2809ec40ad6'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.69UND3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping:/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:c7954a46-ac81-48a5-96e3-1ceb28531296'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/spicygen/Desktop/ros_ws/build/slam_gmapping'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping:/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble')]), 'shell': False}
+[11.379365] (-) TimerEvent: {}
+[11.454160] (slam_gmapping) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[11.479494] (-) TimerEvent: {}
+[11.576969] (slam_gmapping) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[11.579621] (-) TimerEvent: {}
+[11.592279] (slam_gmapping) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[11.679787] (-) TimerEvent: {}
+[11.737275] (slam_gmapping) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[11.754420] (slam_gmapping) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[11.754975] (slam_gmapping) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[11.755814] (slam_gmapping) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[11.762318] (slam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[11.779898] (-) TimerEvent: {}
+[11.880352] (-) TimerEvent: {}
+[11.930632] (slam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[11.948161] (slam_gmapping) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[11.948855] (slam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[11.949879] (slam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[11.951062] (slam_gmapping) StderrLine: {'line': b'\x1b[0m -fuse-ld=lld -Wl,--disable-new-dtags\x1b[0m\n'}
+[11.957059] (slam_gmapping) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[11.980508] (-) TimerEvent: {}
+[12.080865] (-) TimerEvent: {}
+[12.181227] (-) TimerEvent: {}
+[12.281642] (-) TimerEvent: {}
+[12.301175] (slam_gmapping) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[12.381777] (-) TimerEvent: {}
+[12.482423] (-) TimerEvent: {}
+[12.555491] (slam_gmapping) StdoutLine: {'line': b'-- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[12.582556] (-) TimerEvent: {}
+[12.682987] (-) TimerEvent: {}
+[12.725591] (slam_gmapping) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[12.744947] (slam_gmapping) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[12.775343] (slam_gmapping) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[12.783181] (-) TimerEvent: {}
+[12.816763] (slam_gmapping) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[12.869508] (slam_gmapping) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[12.883344] (-) TimerEvent: {}
+[12.949171] (slam_gmapping) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[12.983497] (-) TimerEvent: {}
+[13.054643] (slam_gmapping) StdoutLine: {'line': b'-- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)\n'}
+[13.083634] (-) TimerEvent: {}
+[13.089094] (slam_gmapping) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[13.183788] (-) TimerEvent: {}
+[13.284319] (-) TimerEvent: {}
+[13.305458] (slam_gmapping) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[13.313691] (slam_gmapping) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[13.384441] (-) TimerEvent: {}
+[13.484889] (-) TimerEvent: {}
+[13.540006] (slam_gmapping) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[13.585051] (-) TimerEvent: {}
+[13.602726] (slam_gmapping) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[13.685223] (-) TimerEvent: {}
+[13.699028] (slam_gmapping) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[13.724114] (slam_gmapping) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[13.785346] (-) TimerEvent: {}
+[13.876254] (slam_gmapping) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[13.876727] (slam_gmapping) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[13.885427] (-) TimerEvent: {}
+[13.985812] (-) TimerEvent: {}
+[14.031035] (slam_gmapping) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[14.033422] (slam_gmapping) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[14.085970] (-) TimerEvent: {}
+[14.186404] (-) TimerEvent: {}
+[14.286807] (-) TimerEvent: {}
+[14.297752] (slam_gmapping) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[14.336182] (slam_gmapping) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[14.338998] (slam_gmapping) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[14.339299] (slam_gmapping) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[14.347990] (slam_gmapping) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[14.386953] (-) TimerEvent: {}
+[14.391875] (slam_gmapping) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[14.438774] (slam_gmapping) StdoutLine: {'line': b'-- Found openslam_gmapping: 0.1.2 (/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/cmake)\n'}
+[14.447190] (slam_gmapping) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[14.487120] (-) TimerEvent: {}
+[14.587546] (-) TimerEvent: {}
+[14.650879] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[14.651424] (slam_gmapping) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/spicygen/Desktop/ros_ws/src/slam_gmapping/slam_gmapping/include\n'}
+[14.651745] (slam_gmapping) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[14.653118] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[14.654825] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[14.656128] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[14.658447] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[14.658656] (slam_gmapping) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[14.659715] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[14.662566] (slam_gmapping) StdoutLine: {'line': b'-- Configuring done\n'}
+[14.687702] (-) TimerEvent: {}
+[14.693586] (slam_gmapping) StdoutLine: {'line': b'-- Generating done\n'}
+[14.704316] (slam_gmapping) StdoutLine: {'line': b'-- Build files have been written to: /home/spicygen/Desktop/ros_ws/build/slam_gmapping\n'}
+[14.725481] (slam_gmapping) CommandEnded: {'returncode': 0}
+[14.726580] (slam_gmapping) JobProgress: {'identifier': 'slam_gmapping', 'progress': 'build'}
+[14.728347] (slam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/spicygen/Desktop/ros_ws/build/slam_gmapping', '--', '-j8', '-l8'], 'cwd': '/home/spicygen/Desktop/ros_ws/build/slam_gmapping', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'spicygen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/lib:/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/spicygen'), ('OLDPWD', '/home/spicygen/Desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1496'), ('SYSTEMD_EXEC_PID', '1679'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '11180'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'spicygen'), ('JOURNAL_STREAM', '8:14597'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'spicygen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/spicygen-Lenovo-ideapad-330-15IKB:@/tmp/.ICE-unix/1651,unix/spicygen-Lenovo-ideapad-330-15IKB:/tmp/.ICE-unix/1651'), ('INVOCATION_ID', 'f686a8bd0ed24f548bafc2809ec40ad6'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.69UND3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping:/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:c7954a46-ac81-48a5-96e3-1ceb28531296'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/spicygen/Desktop/ros_ws/build/slam_gmapping'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping:/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble')]), 'shell': False}
+[14.787868] (-) TimerEvent: {}
+[14.846931] (slam_gmapping) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/slam_gmapping.dir/src/slam_gmapping.cpp.o\x1b[0m\n'}
+[14.888043] (-) TimerEvent: {}
+[14.988440] (-) TimerEvent: {}
+[15.088859] (-) TimerEvent: {}
+[15.189298] (-) TimerEvent: {}
+[15.289723] (-) TimerEvent: {}
+[15.390146] (-) TimerEvent: {}
+[15.490536] (-) TimerEvent: {}
+[15.591003] (-) TimerEvent: {}
+[15.691410] (-) TimerEvent: {}
+[15.791939] (-) TimerEvent: {}
+[15.793665] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/spicygen/Desktop/ros_ws/src/slam_gmapping/slam_gmapping/include/slam_gmapping/slam_gmapping.h:38\x1b[m\x1b[K,\n'}
+[15.793935] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/spicygen/Desktop/ros_ws/src/slam_gmapping/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[15.794091] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp\x07-Wcpp\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.794268] (slam_gmapping) StderrLine: {'line': b'   35 | #\x1b[01;35m\x1b[Kwarning\x1b[m\x1b[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead\n'}
+[15.794469] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[15.892161] (-) TimerEvent: {}
+[15.992582] (-) TimerEvent: {}
+[16.093027] (-) TimerEvent: {}
+[16.193466] (-) TimerEvent: {}
+[16.293910] (-) TimerEvent: {}
+[16.394354] (-) TimerEvent: {}
+[16.494787] (-) TimerEvent: {}
+[16.595200] (-) TimerEvent: {}
+[16.695758] (-) TimerEvent: {}
+[16.796194] (-) TimerEvent: {}
+[16.896584] (-) TimerEvent: {}
+[16.997028] (-) TimerEvent: {}
+[17.097494] (-) TimerEvent: {}
+[17.197912] (-) TimerEvent: {}
+[17.298419] (-) TimerEvent: {}
+[17.398880] (-) TimerEvent: {}
+[17.499380] (-) TimerEvent: {}
+[17.599979] (-) TimerEvent: {}
+[17.700477] (-) TimerEvent: {}
+[17.801038] (-) TimerEvent: {}
+[17.901438] (-) TimerEvent: {}
+[18.001877] (-) TimerEvent: {}
+[18.102319] (-) TimerEvent: {}
+[18.202774] (-) TimerEvent: {}
+[18.303324] (-) TimerEvent: {}
+[18.403761] (-) TimerEvent: {}
+[18.504210] (-) TimerEvent: {}
+[18.604662] (-) TimerEvent: {}
+[18.705104] (-) TimerEvent: {}
+[18.805518] (-) TimerEvent: {}
+[18.905952] (-) TimerEvent: {}
+[19.006387] (-) TimerEvent: {}
+[19.106808] (-) TimerEvent: {}
+[19.207255] (-) TimerEvent: {}
+[19.307699] (-) TimerEvent: {}
+[19.408134] (-) TimerEvent: {}
+[19.508587] (-) TimerEvent: {}
+[19.609026] (-) TimerEvent: {}
+[19.709503] (-) TimerEvent: {}
+[19.809955] (-) TimerEvent: {}
+[19.910374] (-) TimerEvent: {}
+[20.010816] (-) TimerEvent: {}
+[20.111259] (-) TimerEvent: {}
+[20.211654] (-) TimerEvent: {}
+[20.312089] (-) TimerEvent: {}
+[20.412540] (-) TimerEvent: {}
+[20.512968] (-) TimerEvent: {}
+[20.613368] (-) TimerEvent: {}
+[20.713798] (-) TimerEvent: {}
+[20.814231] (-) TimerEvent: {}
+[20.914671] (-) TimerEvent: {}
+[20.968580] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:9\x1b[m\x1b[K,\n'}
+[20.968875] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/spicygen/Desktop/ros_ws/src/slam_gmapping/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[20.969022] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/spicygen/Desktop/ros_ws/src/slam_gmapping/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[20.969155] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include/gmapping/particlefilter/particlefilter.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid rle(OutputIterator&, const Iterator&, const Iterator&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[20.969309] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include/gmapping/particlefilter/particlefilter.h:140:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kthis \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99 clause does not guard... [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmisleading-indentation\x07-Wmisleading-indentation\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[20.969450] (slam_gmapping) StderrLine: {'line': b'  140 |         \x1b[01;35m\x1b[Kif\x1b[m\x1b[K (count>0)\n'}
+[20.969573] (slam_gmapping) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[20.969821] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/include/gmapping/particlefilter/particlefilter.h:142:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K...this statement, but the latter is misleadingly indented as if it were guarded by the \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[20.969956] (slam_gmapping) StderrLine: {'line': b'  142 |                 \x1b[01;36m\x1b[Kout\x1b[m\x1b[K++;\n'}
+[20.970080] (slam_gmapping) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[21.014846] (-) TimerEvent: {}
+[21.115301] (-) TimerEvent: {}
+[21.215749] (-) TimerEvent: {}
+[21.316186] (-) TimerEvent: {}
+[21.416604] (-) TimerEvent: {}
+[21.517099] (-) TimerEvent: {}
+[21.617623] (-) TimerEvent: {}
+[21.718222] (-) TimerEvent: {}
+[21.818728] (-) TimerEvent: {}
+[21.919296] (-) TimerEvent: {}
+[22.019813] (-) TimerEvent: {}
+[22.120328] (-) TimerEvent: {}
+[22.220820] (-) TimerEvent: {}
+[22.321228] (-) TimerEvent: {}
+[22.421656] (-) TimerEvent: {}
+[22.522090] (-) TimerEvent: {}
+[22.622565] (-) TimerEvent: {}
+[22.723080] (-) TimerEvent: {}
+[22.823663] (-) TimerEvent: {}
+[22.924322] (-) TimerEvent: {}
+[23.024837] (-) TimerEvent: {}
+[23.125335] (-) TimerEvent: {}
+[23.225843] (-) TimerEvent: {}
+[23.326354] (-) TimerEvent: {}
+[23.426873] (-) TimerEvent: {}
+[23.527368] (-) TimerEvent: {}
+[23.627770] (-) TimerEvent: {}
+[23.728298] (-) TimerEvent: {}
+[23.828769] (-) TimerEvent: {}
+[23.929283] (-) TimerEvent: {}
+[24.029719] (-) TimerEvent: {}
+[24.130125] (-) TimerEvent: {}
+[24.230578] (-) TimerEvent: {}
+[24.331061] (-) TimerEvent: {}
+[24.431488] (-) TimerEvent: {}
+[24.532109] (-) TimerEvent: {}
+[24.632647] (-) TimerEvent: {}
+[24.733409] (-) TimerEvent: {}
+[24.833911] (-) TimerEvent: {}
+[24.934523] (-) TimerEvent: {}
+[25.035022] (-) TimerEvent: {}
+[25.135585] (-) TimerEvent: {}
+[25.236103] (-) TimerEvent: {}
+[25.336528] (-) TimerEvent: {}
+[25.436976] (-) TimerEvent: {}
+[25.537318] (-) TimerEvent: {}
+[25.637719] (-) TimerEvent: {}
+[25.738268] (-) TimerEvent: {}
+[25.838701] (-) TimerEvent: {}
+[25.939123] (-) TimerEvent: {}
+[26.039705] (-) TimerEvent: {}
+[26.140496] (-) TimerEvent: {}
+[26.240992] (-) TimerEvent: {}
+[26.341484] (-) TimerEvent: {}
+[26.441975] (-) TimerEvent: {}
+[26.542470] (-) TimerEvent: {}
+[26.642958] (-) TimerEvent: {}
+[26.743375] (-) TimerEvent: {}
+[26.843784] (-) TimerEvent: {}
+[26.944197] (-) TimerEvent: {}
+[27.044634] (-) TimerEvent: {}
+[27.145052] (-) TimerEvent: {}
+[27.245518] (-) TimerEvent: {}
+[27.345945] (-) TimerEvent: {}
+[27.446369] (-) TimerEvent: {}
+[27.546804] (-) TimerEvent: {}
+[27.647260] (-) TimerEvent: {}
+[27.747690] (-) TimerEvent: {}
+[27.848130] (-) TimerEvent: {}
+[27.948534] (-) TimerEvent: {}
+[28.048963] (-) TimerEvent: {}
+[28.149518] (-) TimerEvent: {}
+[28.250300] (-) TimerEvent: {}
+[28.350782] (-) TimerEvent: {}
+[28.451263] (-) TimerEvent: {}
+[28.551738] (-) TimerEvent: {}
+[28.652247] (-) TimerEvent: {}
+[28.752739] (-) TimerEvent: {}
+[28.853249] (-) TimerEvent: {}
+[28.953751] (-) TimerEvent: {}
+[29.054273] (-) TimerEvent: {}
+[29.154778] (-) TimerEvent: {}
+[29.255314] (-) TimerEvent: {}
+[29.355828] (-) TimerEvent: {}
+[29.456331] (-) TimerEvent: {}
+[29.556801] (-) TimerEvent: {}
+[29.657394] (-) TimerEvent: {}
+[29.757832] (-) TimerEvent: {}
+[29.858281] (-) TimerEvent: {}
+[29.958722] (-) TimerEvent: {}
+[30.059154] (-) TimerEvent: {}
+[30.159603] (-) TimerEvent: {}
+[30.260032] (-) TimerEvent: {}
+[30.360476] (-) TimerEvent: {}
+[30.460908] (-) TimerEvent: {}
+[30.561341] (-) TimerEvent: {}
+[30.661770] (-) TimerEvent: {}
+[30.762202] (-) TimerEvent: {}
+[30.862647] (-) TimerEvent: {}
+[30.963080] (-) TimerEvent: {}
+[31.063534] (-) TimerEvent: {}
+[31.163966] (-) TimerEvent: {}
+[31.264398] (-) TimerEvent: {}
+[31.364829] (-) TimerEvent: {}
+[31.465286] (-) TimerEvent: {}
+[31.565694] (-) TimerEvent: {}
+[31.666340] (-) TimerEvent: {}
+[31.766796] (-) TimerEvent: {}
+[31.867224] (-) TimerEvent: {}
+[31.967652] (-) TimerEvent: {}
+[32.068097] (-) TimerEvent: {}
+[32.168548] (-) TimerEvent: {}
+[32.269004] (-) TimerEvent: {}
+[32.369431] (-) TimerEvent: {}
+[32.469893] (-) TimerEvent: {}
+[32.570452] (-) TimerEvent: {}
+[32.670874] (-) TimerEvent: {}
+[32.771313] (-) TimerEvent: {}
+[32.871773] (-) TimerEvent: {}
+[32.972189] (-) TimerEvent: {}
+[33.072641] (-) TimerEvent: {}
+[33.173074] (-) TimerEvent: {}
+[33.273504] (-) TimerEvent: {}
+[33.373954] (-) TimerEvent: {}
+[33.474383] (-) TimerEvent: {}
+[33.574827] (-) TimerEvent: {}
+[33.675286] (-) TimerEvent: {}
+[33.775737] (-) TimerEvent: {}
+[33.876182] (-) TimerEvent: {}
+[33.976634] (-) TimerEvent: {}
+[34.077062] (-) TimerEvent: {}
+[34.177515] (-) TimerEvent: {}
+[34.277949] (-) TimerEvent: {}
+[34.378378] (-) TimerEvent: {}
+[34.478810] (-) TimerEvent: {}
+[34.579229] (-) TimerEvent: {}
+[34.679646] (-) TimerEvent: {}
+[34.780022] (-) TimerEvent: {}
+[34.880424] (-) TimerEvent: {}
+[34.980854] (-) TimerEvent: {}
+[35.081305] (-) TimerEvent: {}
+[35.181745] (-) TimerEvent: {}
+[35.282195] (-) TimerEvent: {}
+[35.382661] (-) TimerEvent: {}
+[35.483109] (-) TimerEvent: {}
+[35.583589] (-) TimerEvent: {}
+[35.684043] (-) TimerEvent: {}
+[35.784476] (-) TimerEvent: {}
+[35.884931] (-) TimerEvent: {}
+[35.985327] (-) TimerEvent: {}
+[36.085761] (-) TimerEvent: {}
+[36.186172] (-) TimerEvent: {}
+[36.286597] (-) TimerEvent: {}
+[36.387012] (-) TimerEvent: {}
+[36.487458] (-) TimerEvent: {}
+[36.587912] (-) TimerEvent: {}
+[36.688345] (-) TimerEvent: {}
+[36.788774] (-) TimerEvent: {}
+[36.889205] (-) TimerEvent: {}
+[36.989656] (-) TimerEvent: {}
+[37.090068] (-) TimerEvent: {}
+[37.190520] (-) TimerEvent: {}
+[37.290949] (-) TimerEvent: {}
+[37.391374] (-) TimerEvent: {}
+[37.491800] (-) TimerEvent: {}
+[37.592258] (-) TimerEvent: {}
+[37.692684] (-) TimerEvent: {}
+[37.793108] (-) TimerEvent: {}
+[37.893552] (-) TimerEvent: {}
+[37.993990] (-) TimerEvent: {}
+[38.094433] (-) TimerEvent: {}
+[38.194860] (-) TimerEvent: {}
+[38.295304] (-) TimerEvent: {}
+[38.395731] (-) TimerEvent: {}
+[38.496158] (-) TimerEvent: {}
+[38.596609] (-) TimerEvent: {}
+[38.697036] (-) TimerEvent: {}
+[38.797487] (-) TimerEvent: {}
+[38.897910] (-) TimerEvent: {}
+[38.998338] (-) TimerEvent: {}
+[39.098760] (-) TimerEvent: {}
+[39.199186] (-) TimerEvent: {}
+[39.299633] (-) TimerEvent: {}
+[39.400057] (-) TimerEvent: {}
+[39.500597] (-) TimerEvent: {}
+[39.601092] (-) TimerEvent: {}
+[39.701529] (-) TimerEvent: {}
+[39.801987] (-) TimerEvent: {}
+[39.902438] (-) TimerEvent: {}
+[40.002877] (-) TimerEvent: {}
+[40.103320] (-) TimerEvent: {}
+[40.203781] (-) TimerEvent: {}
+[40.304226] (-) TimerEvent: {}
+[40.404686] (-) TimerEvent: {}
+[40.505126] (-) TimerEvent: {}
+[40.605541] (-) TimerEvent: {}
+[40.705984] (-) TimerEvent: {}
+[40.806366] (-) TimerEvent: {}
+[40.906811] (-) TimerEvent: {}
+[41.007283] (-) TimerEvent: {}
+[41.107714] (-) TimerEvent: {}
+[41.176020] (slam_gmapping) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable slam_gmapping\x1b[0m\n'}
+[41.207884] (-) TimerEvent: {}
+[41.308317] (-) TimerEvent: {}
+[41.408752] (-) TimerEvent: {}
+[41.509184] (-) TimerEvent: {}
+[41.609619] (-) TimerEvent: {}
+[41.710056] (-) TimerEvent: {}
+[41.810515] (-) TimerEvent: {}
+[41.910949] (-) TimerEvent: {}
+[42.011387] (-) TimerEvent: {}
+[42.111830] (-) TimerEvent: {}
+[42.212293] (-) TimerEvent: {}
+[42.312735] (-) TimerEvent: {}
+[42.378156] (slam_gmapping) StdoutLine: {'line': b'[100%] Built target slam_gmapping\n'}
+[42.400868] (slam_gmapping) CommandEnded: {'returncode': 0}
+[42.402263] (slam_gmapping) JobProgress: {'identifier': 'slam_gmapping', 'progress': 'install'}
+[42.403085] (slam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/spicygen/Desktop/ros_ws/build/slam_gmapping'], 'cwd': '/home/spicygen/Desktop/ros_ws/build/slam_gmapping', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'spicygen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/lib:/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/spicygen'), ('OLDPWD', '/home/spicygen/Desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1496'), ('SYSTEMD_EXEC_PID', '1679'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '11180'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'spicygen'), ('JOURNAL_STREAM', '8:14597'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'spicygen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/spicygen-Lenovo-ideapad-330-15IKB:@/tmp/.ICE-unix/1651,unix/spicygen-Lenovo-ideapad-330-15IKB:/tmp/.ICE-unix/1651'), ('INVOCATION_ID', 'f686a8bd0ed24f548bafc2809ec40ad6'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.69UND3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping:/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:c7954a46-ac81-48a5-96e3-1ceb28531296'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/spicygen/Desktop/ros_ws/build/slam_gmapping'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping:/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble')]), 'shell': False}
+[42.412882] (-) TimerEvent: {}
+[42.419874] (slam_gmapping) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[42.420210] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/lib/slam_gmapping/slam_gmapping\n'}
+[42.429599] (slam_gmapping) StdoutLine: {'line': b'-- Set runtime path of "/home/spicygen/Desktop/ros_ws/install/slam_gmapping/lib/slam_gmapping/slam_gmapping" to ""\n'}
+[42.429862] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/launch\n'}
+[42.430178] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/launch/slam_gmapping.launch.py\n'}
+[42.430534] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/ament_index/resource_index/package_run_dependencies/slam_gmapping\n'}
+[42.430902] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/ament_index/resource_index/parent_prefix_path/slam_gmapping\n'}
+[42.431302] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/environment/ament_prefix_path.sh\n'}
+[42.431637] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/environment/ament_prefix_path.dsv\n'}
+[42.431919] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/environment/path.sh\n'}
+[42.432186] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/environment/path.dsv\n'}
+[42.432497] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/local_setup.bash\n'}
+[42.432833] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/local_setup.sh\n'}
+[42.433196] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/local_setup.zsh\n'}
+[42.433582] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/local_setup.dsv\n'}
+[42.433963] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/package.dsv\n'}
+[42.434291] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/ament_index/resource_index/packages/slam_gmapping\n'}
+[42.434690] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/cmake/slam_gmappingConfig.cmake\n'}
+[42.435068] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/cmake/slam_gmappingConfig-version.cmake\n'}
+[42.435367] (slam_gmapping) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/package.xml\n'}
+[42.438704] (slam_gmapping) CommandEnded: {'returncode': 0}
+[42.463123] (slam_gmapping) JobEnded: {'identifier': 'slam_gmapping', 'rc': 0}
+[42.464896] (-) EventReactorShutdown: {}

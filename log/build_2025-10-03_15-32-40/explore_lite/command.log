@@ -1,0 +1,4 @@
+Invoking command in '/home/spicygen/Desktop/ros_ws/build/explore_lite': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/spicygen/Desktop/ros_ws/build/explore_lite -- -j8 -l8
+Invoked command in '/home/spicygen/Desktop/ros_ws/build/explore_lite' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/spicygen/Desktop/ros_ws/build/explore_lite -- -j8 -l8
+Invoking command in '/home/spicygen/Desktop/ros_ws/build/explore_lite': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/spicygen/Desktop/ros_ws/build/explore_lite
+Invoked command in '/home/spicygen/Desktop/ros_ws/build/explore_lite' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/spicygen/Desktop/ros_ws/build/explore_lite

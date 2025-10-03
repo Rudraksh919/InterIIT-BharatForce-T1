@@ -1,0 +1,36 @@
+[0.175s] Invoking command in '/home/spicygen/Desktop/ros_ws/build/explore_lite': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/spicygen/Desktop/ros_ws/build/explore_lite -- -j8 -l8
+[0.760s] [ 20%] Built target gtest
+[0.792s] [ 40%] Built target gtest_main
+[1.142s] [ 80%] Built target explore
+[1.142s] [100%] Built target test_explore
+[1.270s] Invoked command in '/home/spicygen/Desktop/ros_ws/build/explore_lite' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/spicygen/Desktop/ros_ws/build/explore_lite -- -j8 -l8
+[1.287s] Invoking command in '/home/spicygen/Desktop/ros_ws/build/explore_lite': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/spicygen/Desktop/ros_ws/build/explore_lite
+[1.339s] -- Install configuration: ""
+[1.339s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/include/explore/
+[1.340s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/include/explore//frontier_search.h
+[1.341s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/include/explore//costmap_tools.h
+[1.341s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/include/explore//costmap_client.h
+[1.341s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/include/explore//explore.h
+[1.342s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/config
+[1.342s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/config/params.yaml
+[1.343s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/config/params_costmap.yaml
+[1.343s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/launch
+[1.344s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/launch/explore.launch.py
+[1.344s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/lib/explore_lite/explore
+[1.344s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/ament_index/resource_index/package_run_dependencies/explore_lite
+[1.345s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/ament_index/resource_index/parent_prefix_path/explore_lite
+[1.345s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/environment/ament_prefix_path.sh
+[1.345s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/environment/ament_prefix_path.dsv
+[1.346s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/environment/path.sh
+[1.346s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/environment/path.dsv
+[1.346s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/local_setup.bash
+[1.346s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/local_setup.sh
+[1.346s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/local_setup.zsh
+[1.347s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/local_setup.dsv
+[1.347s] -- Installing: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/package.dsv
+[1.347s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/ament_index/resource_index/packages/explore_lite
+[1.347s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.348s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/cmake/explore_liteConfig.cmake
+[1.348s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/cmake/explore_liteConfig-version.cmake
+[1.349s] -- Up-to-date: /home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/package.xml
+[1.350s] Invoked command in '/home/spicygen/Desktop/ros_ws/build/explore_lite' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/spicygen/Desktop/ros_ws/build/explore_lite

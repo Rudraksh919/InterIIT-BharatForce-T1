@@ -1,0 +1,1 @@
+/home/spicygen/Desktop/ros_ws/src/bcr-bot/launch/nav2.launch.py

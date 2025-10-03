@@ -1,0 +1,327 @@
+[0.000000] (-) TimerEvent: {}
+[0.000454] (bcr_bot) JobQueued: {'identifier': 'bcr_bot', 'dependencies': OrderedDict()}
+[0.001123] (bcr_bot) JobStarted: {'identifier': 'bcr_bot'}
+[0.101931] (-) TimerEvent: {}
+[0.131820] (bcr_bot) JobProgress: {'identifier': 'bcr_bot', 'progress': 'cmake'}
+[0.132686] (bcr_bot) Command: {'cmd': ['/usr/bin/cmake', '/home/spicygen/Desktop/ros_ws/src/bcr-bot', '-DCMAKE_INSTALL_PREFIX=/home/spicygen/Desktop/ros_ws/install/bcr_bot'], 'cwd': '/home/spicygen/Desktop/ros_ws/build/bcr_bot', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'spicygen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/spicygen'), ('OLDPWD', '/home/spicygen'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2888'), ('SYSTEMD_EXEC_PID', '3154'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '17375'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'spicygen'), ('JOURNAL_STREAM', '8:14208'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'spicygen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/spicygen-Lenovo-ideapad-330-15IKB:@/tmp/.ICE-unix/3130,unix/spicygen-Lenovo-ideapad-330-15IKB:/tmp/.ICE-unix/3130'), ('INVOCATION_ID', '025b123ef8614533ab5cc2037865be49'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YPGFD3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:e6787b0d-df58-4ca2-bfa3-f51b3d6ddd56'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/spicygen/Desktop/ros_ws/build/bcr_bot'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble')]), 'shell': False}
+[0.202219] (-) TimerEvent: {}
+[0.303296] (-) TimerEvent: {}
+[0.404123] (-) TimerEvent: {}
+[0.504982] (-) TimerEvent: {}
+[0.605551] (-) TimerEvent: {}
+[0.706145] (-) TimerEvent: {}
+[0.806651] (-) TimerEvent: {}
+[0.907440] (-) TimerEvent: {}
+[1.008231] (-) TimerEvent: {}
+[1.109000] (-) TimerEvent: {}
+[1.209813] (-) TimerEvent: {}
+[1.310574] (-) TimerEvent: {}
+[1.341522] (bcr_bot) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.410817] (-) TimerEvent: {}
+[1.511549] (-) TimerEvent: {}
+[1.612757] (-) TimerEvent: {}
+[1.713456] (-) TimerEvent: {}
+[1.814235] (-) TimerEvent: {}
+[1.915031] (-) TimerEvent: {}
+[2.016207] (-) TimerEvent: {}
+[2.059227] (bcr_bot) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.116414] (-) TimerEvent: {}
+[2.119713] (bcr_bot) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.216648] (-) TimerEvent: {}
+[2.317315] (-) TimerEvent: {}
+[2.336946] (bcr_bot) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.345736] (bcr_bot) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.346527] (bcr_bot) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.347972] (bcr_bot) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.353134] (bcr_bot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.417598] (-) TimerEvent: {}
+[2.518269] (-) TimerEvent: {}
+[2.556816] (bcr_bot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.565421] (bcr_bot) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.565803] (bcr_bot) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.566386] (bcr_bot) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.618576] (-) TimerEvent: {}
+[2.678742] (bcr_bot) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.718926] (-) TimerEvent: {}
+[2.820095] (-) TimerEvent: {}
+[2.920769] (-) TimerEvent: {}
+[3.021117] (-) TimerEvent: {}
+[3.073860] (bcr_bot) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[3.121871] (-) TimerEvent: {}
+[3.222523] (-) TimerEvent: {}
+[3.323239] (-) TimerEvent: {}
+[3.424129] (-) TimerEvent: {}
+[3.524881] (-) TimerEvent: {}
+[3.625274] (-) TimerEvent: {}
+[3.648894] (bcr_bot) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.652263] (bcr_bot) StdoutLine: {'line': b'-- Generating done\n'}
+[3.654979] (bcr_bot) StdoutLine: {'line': b'-- Build files have been written to: /home/spicygen/Desktop/ros_ws/build/bcr_bot\n'}
+[3.659448] (bcr_bot) CommandEnded: {'returncode': 0}
+[3.661240] (bcr_bot) JobProgress: {'identifier': 'bcr_bot', 'progress': 'build'}
+[3.661274] (bcr_bot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/spicygen/Desktop/ros_ws/build/bcr_bot', '--', '-j8', '-l8'], 'cwd': '/home/spicygen/Desktop/ros_ws/build/bcr_bot', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'spicygen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/spicygen'), ('OLDPWD', '/home/spicygen'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2888'), ('SYSTEMD_EXEC_PID', '3154'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '17375'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'spicygen'), ('JOURNAL_STREAM', '8:14208'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'spicygen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/spicygen-Lenovo-ideapad-330-15IKB:@/tmp/.ICE-unix/3130,unix/spicygen-Lenovo-ideapad-330-15IKB:/tmp/.ICE-unix/3130'), ('INVOCATION_ID', '025b123ef8614533ab5cc2037865be49'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YPGFD3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:e6787b0d-df58-4ca2-bfa3-f51b3d6ddd56'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/spicygen/Desktop/ros_ws/build/bcr_bot'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble')]), 'shell': False}
+[3.700793] (bcr_bot) CommandEnded: {'returncode': 0}
+[3.701897] (bcr_bot) JobProgress: {'identifier': 'bcr_bot', 'progress': 'install'}
+[3.711979] (bcr_bot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/spicygen/Desktop/ros_ws/build/bcr_bot'], 'cwd': '/home/spicygen/Desktop/ros_ws/build/bcr_bot', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'spicygen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/spicygen'), ('OLDPWD', '/home/spicygen'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2888'), ('SYSTEMD_EXEC_PID', '3154'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '17375'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'spicygen'), ('JOURNAL_STREAM', '8:14208'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'spicygen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/spicygen-Lenovo-ideapad-330-15IKB:@/tmp/.ICE-unix/3130,unix/spicygen-Lenovo-ideapad-330-15IKB:/tmp/.ICE-unix/3130'), ('INVOCATION_ID', '025b123ef8614533ab5cc2037865be49'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YPGFD3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:e6787b0d-df58-4ca2-bfa3-f51b3d6ddd56'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/spicygen/Desktop/ros_ws/build/bcr_bot'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble')]), 'shell': False}
+[3.719908] (bcr_bot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.720141] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//launch\n'}
+[3.720238] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//launch/rviz.launch.py\n'}
+[3.720385] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//launch/bcr_bot_gazebo_spawn.launch.py\n'}
+[3.720588] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//launch/nav2.launch.py\n'}
+[3.720740] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//launch/gazebo.launch.py\n'}
+[3.720911] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//launch/main.launch.py\n'}
+[3.721026] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//launch/detectionmodel.launch.py\n'}
+[3.721187] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//launch/mapping.launch.py\n'}
+[3.721330] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//meshes\n'}
+[3.721445] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//meshes/kinect\n'}
+[3.721599] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//meshes/kinect/d415.dae\n'}
+[3.721745] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//meshes/kinect/kinect.jpg\n'}
+[3.721864] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//meshes/kinect/kinect.tga\n'}
+[3.722006] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//meshes/kinect/kinect.dae\n'}
+[3.722640] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//meshes/zed2\n'}
+[3.722775] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//meshes/zed2/zed2.DAE\n'}
+[3.722924] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//meshes/logo.png\n'}
+[3.723114] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//meshes/realsense_texture.png\n'}
+[3.723299] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//meshes/bcr_bot_mesh.dae\n'}
+[3.724962] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models\n'}
+[3.725187] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01\n'}
+[3.725275] (-) TimerEvent: {}
+[3.725372] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01/meshes\n'}
+[3.725500] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01/meshes/aws_robomaker_warehouse_DeskC_01_visual.DAE\n'}
+[3.725587] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01/meshes/aws_robomaker_warehouse_DeskC_01_collision.DAE\n'}
+[3.725700] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01/model.sdf\n'}
+[3.725878] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01/model.config\n'}
+[3.726056] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01/materials\n'}
+[3.726237] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01/materials/.DS_Store\n'}
+[3.726375] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01/materials/textures\n'}
+[3.726544] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_02.png\n'}
+[3.726711] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_04.png\n'}
+[3.726867] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_03.psd\n'}
+[3.728881] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_03.png\n'}
+[3.729247] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_01.png\n'}
+[3.730056] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringC_01\n'}
+[3.730235] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringC_01/meshes\n'}
+[3.730310] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringC_01/meshes/aws_robomaker_warehouse_ClutteringC_01_visual.DAE\n'}
+[3.730429] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringC_01/meshes/aws_robomaker_warehouse_ClutteringC_01_collision.DAE\n'}
+[3.730585] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringC_01/model.sdf\n'}
+[3.730729] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringC_01/model.config\n'}
+[3.730887] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringC_01/materials\n'}
+[3.731061] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringC_01/materials/textures\n'}
+[3.731170] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringC_01/materials/textures/aws_robomaker_warehouse_ClutteringC_02.png\n'}
+[3.731315] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringC_01/materials/textures/aws_robomaker_warehouse_ClutteringC_01.png\n'}
+[3.731658] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone\n'}
+[3.731780] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone/meshes\n'}
+[3.731919] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone/meshes/construction_cone.dae\n'}
+[3.732058] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone/model.sdf\n'}
+[3.732219] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone/model.config\n'}
+[3.732414] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone/materials\n'}
+[3.732534] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone/materials/textures\n'}
+[3.732646] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone/materials/textures/Construction_Cone_Diffuse.png\n'}
+[3.732996] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone/thumbnails\n'}
+[3.733143] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone/thumbnails/5.png\n'}
+[3.733294] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone/thumbnails/1.png\n'}
+[3.733444] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone/thumbnails/2.png\n'}
+[3.733623] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone/thumbnails/4.png\n'}
+[3.733790] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone/thumbnails/3.png\n'}
+[3.733953] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone/model-1_3.sdf\n'}
+[3.734056] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/ConstructionCone/model-1_4.sdf\n'}
+[3.734180] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_WallB_01\n'}
+[3.734332] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_WallB_01/meshes\n'}
+[3.734504] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_WallB_01/meshes/aws_robomaker_warehouse_WallB_01_collision.DAE\n'}
+[3.734652] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_WallB_01/meshes/aws_robomaker_warehouse_WallB_01_visual.DAE\n'}
+[3.734814] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_WallB_01/model.sdf\n'}
+[3.734966] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_WallB_01/model.config\n'}
+[3.735127] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_WallB_01/materials\n'}
+[3.735272] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_WallB_01/materials/textures\n'}
+[3.735379] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_WallB_01/materials/textures/aws_robomaker_warehouse_WallB_01.png\n'}
+[3.735545] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female\n'}
+[3.735713] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/meshes\n'}
+[3.735840] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/meshes/casual_female.dae\n'}
+[3.739658] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/model.sdf\n'}
+[3.739815] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/model.config\n'}
+[3.739966] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/materials\n'}
+[3.740136] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/materials/textures\n'}
+[3.740242] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/materials/textures/young_lightskinned_female_diffuse.png\n'}
+[3.744511] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/materials/textures/female_casualsuit01_diffuse.png\n'}
+[3.747524] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/materials/textures/brown_eye.png\n'}
+[3.748199] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/materials/textures/ponytail01_diffuse.png\n'}
+[3.752673] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/materials/textures/eyebrow002.png\n'}
+[3.752931] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/materials/textures/female_casualsuit02_normal.png\n'}
+[3.754987] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/materials/textures/female_casualsuit02_diffuse.png\n'}
+[3.759582] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/materials/textures/eyelashes01.png\n'}
+[3.759807] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/materials/textures/casual_female.png\n'}
+[3.760126] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/materials/textures/female_casualsuit01_normal.png\n'}
+[3.766495] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/materials/textures/tongue01_diffuse.png\n'}
+[3.767260] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/materials/textures/shoes05_diffuse.png\n'}
+[3.768858] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/thumbnails\n'}
+[3.769007] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/thumbnails/5.png\n'}
+[3.769181] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/thumbnails/1.png\n'}
+[3.769317] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/thumbnails/2.png\n'}
+[3.769485] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/thumbnails/4.png\n'}
+[3.769646] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/female/thumbnails/3.png\n'}
+[3.769806] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfF_01\n'}
+[3.769977] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfF_01/meshes\n'}
+[3.770108] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfF_01/meshes/aws_robomaker_warehouse_ShelfF_01_collision.DAE\n'}
+[3.770231] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfF_01/meshes/aws_robomaker_warehouse_ShelfF_01_visual.DAE\n'}
+[3.770745] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfF_01/model.sdf\n'}
+[3.770903] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfF_01/model.config\n'}
+[3.771061] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfF_01/materials\n'}
+[3.771218] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfF_01/materials/textures\n'}
+[3.771377] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfF_01/materials/textures/aws_robomaker_warehouse_ShelfF_01.png\n'}
+[3.771537] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfF_01/materials/textures/aws_robomaker_warehouse_ShelfF_02.png\n'}
+[3.771684] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfF_01/materials/textures/aws_robomaker_warehouse_ShelfF_03.png\n'}
+[3.771994] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01\n'}
+[3.772129] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01/meshes\n'}
+[3.772253] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01/meshes/aws_robomaker_warehouse_ClutteringA_01_collision.DAE\n'}
+[3.772413] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01/meshes/aws_robomaker_warehouse_ClutteringA_01_visual.DAE\n'}
+[3.772573] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01/.DS_Store\n'}
+[3.772723] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01/model.sdf\n'}
+[3.772873] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01/model.config\n'}
+[3.773113] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01/materials\n'}
+[3.773262] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01/materials/.DS_Store\n'}
+[3.773380] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01/materials/textures\n'}
+[3.773518] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01/materials/textures/.DS_Store\n'}
+[3.773591] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01/materials/textures/aws_robomaker_warehouse_ClutteringA_02.png\n'}
+[3.773750] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01/materials/textures/aws_robomaker_warehouse_ClutteringA_01.png\n'}
+[3.773961] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01/materials/textures/aws_robomaker_warehouse_ClutteringA_03.png\n'}
+[3.774555] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_PalletJackB_01\n'}
+[3.774774] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_PalletJackB_01/meshes\n'}
+[3.774897] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_PalletJackB_01/meshes/aws_robomaker_warehouse_PalletJackB_01_collision.DAE\n'}
+[3.774967] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_PalletJackB_01/meshes/aws_robomaker_warehouse_PalletJackB_01_visual.DAE\n'}
+[3.775445] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_PalletJackB_01/.DS_Store\n'}
+[3.775646] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_PalletJackB_01/model.sdf\n'}
+[3.775792] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_PalletJackB_01/model.config\n'}
+[3.775911] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_PalletJackB_01/materials\n'}
+[3.775979] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_PalletJackB_01/materials/.DS_Store\n'}
+[3.776087] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_PalletJackB_01/materials/textures\n'}
+[3.776194] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_PalletJackB_01/materials/textures/aws_robomaker_warehouse_PalletJackB_01.png\n'}
+[3.776823] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_PalletJackB_01/materials/textures/aws_robomaker_warehouse_PalletJackB_02.png\n'}
+[3.776960] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringD_01\n'}
+[3.777057] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringD_01/meshes\n'}
+[3.777150] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringD_01/meshes/aws_robomaker_warehouse_ClutteringD_01_visual.DAE\n'}
+[3.777247] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringD_01/meshes/aws_robomaker_warehouse_ClutteringD_01_collision.DAE\n'}
+[3.777367] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringD_01/model.sdf\n'}
+[3.777506] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringD_01/model.config\n'}
+[3.777616] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringD_01/materials\n'}
+[3.777766] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringD_01/materials/textures\n'}
+[3.777873] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringD_01/materials/textures/aws_robomaker_warehouse_ClutteringD_02.png\n'}
+[3.778015] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringD_01/materials/textures/aws_robomaker_warehouse_ClutteringD_01.png\n'}
+[3.778334] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_TrashCanC_01\n'}
+[3.778480] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_TrashCanC_01/meshes\n'}
+[3.778618] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_TrashCanC_01/meshes/aws_robomaker_warehouse_TrashCanC_01_collision.DAE\n'}
+[3.778756] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_TrashCanC_01/meshes/aws_robomaker_warehouse_TrashCanC_01_visual.DAE\n'}
+[3.778902] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_TrashCanC_01/model.sdf\n'}
+[3.779010] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_TrashCanC_01/model.config\n'}
+[3.779113] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_TrashCanC_01/materials\n'}
+[3.779249] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_TrashCanC_01/materials/textures\n'}
+[3.779385] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_TrashCanC_01/materials/textures/aws_robomaker_warehouse_TrashCanC_01.png\n'}
+[3.779537] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfD_01\n'}
+[3.779673] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfD_01/meshes\n'}
+[3.779798] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfD_01/meshes/aws_robomaker_warehouse_ShelfD_01_visual.DAE\n'}
+[3.779929] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfD_01/meshes/aws_robomaker_warehouse_ShelfD_01_collision.DAE\n'}
+[3.780062] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfD_01/model.sdf\n'}
+[3.780157] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfD_01/model.config\n'}
+[3.780254] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfD_01/materials\n'}
+[3.780363] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfD_01/materials/textures\n'}
+[3.780518] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfD_01/materials/textures/aws_robomaker_warehouse_ShelfD_01.png\n'}
+[3.780660] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfD_01/materials/textures/aws_robomaker_warehouse_ShelfD_03.png\n'}
+[3.780854] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfD_01/materials/textures/aws_robomaker_warehouse_ShelfD_02.png\n'}
+[3.781198] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfD_01/materials/textures/aws_robomaker_warehouse_ShelfD_04.png\n'}
+[3.781794] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_GroundB_01\n'}
+[3.781994] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_GroundB_01/meshes\n'}
+[3.782119] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_GroundB_01/meshes/aws_robomaker_warehouse_GroundB_01_collision.DAE\n'}
+[3.782234] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_GroundB_01/meshes/aws_robomaker_warehouse_GroundB_01_visual.DAE\n'}
+[3.782506] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_GroundB_01/model.sdf\n'}
+[3.782668] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_GroundB_01/model.config\n'}
+[3.782811] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_GroundB_01/materials\n'}
+[3.782930] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_GroundB_01/materials/textures\n'}
+[3.783092] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_GroundB_01/materials/textures/aws_robomaker_warehouse_GroundB_01.png\n'}
+[3.784701] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_GroundB_01/materials/textures/aws_robomaker_warehouse_GroundB_02.png\n'}
+[3.784919] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Lamp_01\n'}
+[3.785042] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Lamp_01/meshes\n'}
+[3.785228] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Lamp_01/meshes/aws_robomaker_warehouse_Lamp_01_collision.DAE\n'}
+[3.785371] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Lamp_01/meshes/aws_robomaker_warehouse_Lamp_01_visual.DAE\n'}
+[3.785557] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Lamp_01/model.sdf\n'}
+[3.785738] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Lamp_01/model.config\n'}
+[3.785868] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Lamp_01/materials\n'}
+[3.785995] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Lamp_01/materials/textures\n'}
+[3.786154] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Lamp_01/materials/textures/aws_robomaker_warehouse_Lamp_01.png\n'}
+[3.786340] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Bucket_01\n'}
+[3.786472] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Bucket_01/meshes\n'}
+[3.786647] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Bucket_01/meshes/aws_robomaker_warehouse_Bucket_01_visual.DAE\n'}
+[3.786795] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Bucket_01/meshes/aws_robomaker_warehouse_Bucket_01_collision.DAE\n'}
+[3.786959] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Bucket_01/.DS_Store\n'}
+[3.787064] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Bucket_01/model.sdf\n'}
+[3.787167] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Bucket_01/model.config\n'}
+[3.787292] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Bucket_01/materials\n'}
+[3.787453] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Bucket_01/materials/.DS_Store\n'}
+[3.787574] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Bucket_01/materials/textures\n'}
+[3.787682] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Bucket_01/materials/textures/aws_robomaker_warehouse_Bucket_01.png\n'}
+[3.787784] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_RoofB_01\n'}
+[3.787921] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_RoofB_01/meshes\n'}
+[3.788046] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_RoofB_01/meshes/aws_robomaker_warehouse_RoofB_01_visual.DAE\n'}
+[3.788173] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_RoofB_01/meshes/aws_robomaker_warehouse_RoofB_01_collision.DAE\n'}
+[3.788298] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_RoofB_01/model.sdf\n'}
+[3.788491] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_RoofB_01/model.config\n'}
+[3.788631] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_RoofB_01/materials\n'}
+[3.788757] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_RoofB_01/materials/textures\n'}
+[3.788882] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_RoofB_01/materials/textures/aws_robomaker_warehouse_RoofB_01.png\n'}
+[3.789073] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01\n'}
+[3.789200] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01/meshes\n'}
+[3.789326] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01/meshes/aws_robomaker_warehouse_ShelfE_01_visual.DAE\n'}
+[3.789452] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01/meshes/aws_robomaker_warehouse_ShelfE_01_collision.DAE\n'}
+[3.789648] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01/.DS_Store\n'}
+[3.789754] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01/model.sdf\n'}
+[3.789892] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01/model.config\n'}
+[3.789998] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01/materials\n'}
+[3.790102] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01/materials/.DS_Store\n'}
+[3.790207] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01/materials/textures\n'}
+[3.790319] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01/materials/textures/aws_robomaker_warehouse_ShelfE_01.png\n'}
+[3.790478] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01/materials/textures/aws_robomaker_warehouse_ShelfE_02.png\n'}
+[3.790643] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01/materials/textures/aws_robomaker_warehouse_ShelfE_04.png\n'}
+[3.790783] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01/materials/textures/aws_robomaker_warehouse_ShelfE_03.png\n'}
+[3.790896] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//urdf\n'}
+[3.791022] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//urdf/bcr_bot.xacro\n'}
+[3.791212] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//urdf/multi_gazebo.xacro\n'}
+[3.791355] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//urdf/multi_bcr_bot.xacro\n'}
+[3.791531] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//urdf/gz.xacro\n'}
+[3.791681] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//urdf/gazebo.xacro\n'}
+[3.791809] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//urdf/ign.xacro\n'}
+[3.791939] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//urdf/materials.xacro\n'}
+[3.792121] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//urdf/macros.xacro\n'}
+[3.792249] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//worlds\n'}
+[3.792375] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//worlds/empty.sdf\n'}
+[3.792531] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//worlds/small_warehouse.sdf\n'}
+[3.792644] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//rviz\n'}
+[3.792749] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//rviz/entire_setup.rviz\n'}
+[3.792852] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//rviz/map.rviz\n'}
+[3.792956] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//Detectionmodels\n'}
+[3.793060] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//Detectionmodels/cone_detection.pt\n'}
+[3.815622] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot//Detectionmodels/cone_detection.onnx\n'}
+[3.825425] (-) TimerEvent: {}
+[3.857561] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/config\n'}
+[3.857974] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/config/bcr_map.yaml\n'}
+[3.858195] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/config/mapper_params_online_async.yaml\n'}
+[3.858370] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/config/bcr_map.pgm\n'}
+[3.858607] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/config/nav2_params.yaml\n'}
+[3.858883] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/lib/bcr_bot/remapper.py\n'}
+[3.859070] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/lib/bcr_bot/objdetection.py\n'}
+[3.859525] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/ament_index/resource_index/package_run_dependencies/bcr_bot\n'}
+[3.859689] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/ament_index/resource_index/parent_prefix_path/bcr_bot\n'}
+[3.859821] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/environment/ament_prefix_path.sh\n'}
+[3.859893] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/environment/ament_prefix_path.dsv\n'}
+[3.860002] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/environment/path.sh\n'}
+[3.860140] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/environment/path.dsv\n'}
+[3.860278] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/local_setup.bash\n'}
+[3.860421] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/local_setup.sh\n'}
+[3.860592] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/local_setup.zsh\n'}
+[3.860772] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/local_setup.dsv\n'}
+[3.860944] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/package.dsv\n'}
+[3.861167] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/ament_index/resource_index/packages/bcr_bot\n'}
+[3.861424] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/cmake/bcr_botConfig.cmake\n'}
+[3.861710] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/cmake/bcr_botConfig-version.cmake\n'}
+[3.861852] (bcr_bot) StdoutLine: {'line': b'-- Installing: /home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/package.xml\n'}
+[3.864253] (bcr_bot) CommandEnded: {'returncode': 0}
+[3.925563] (-) TimerEvent: {}
+[4.026172] (-) TimerEvent: {}
+[4.034009] (bcr_bot) JobEnded: {'identifier': 'bcr_bot', 'rc': 0}
+[4.034775] (-) EventReactorShutdown: {}

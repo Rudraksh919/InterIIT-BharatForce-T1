@@ -1,0 +1,27 @@
+slam_toolbox:
+  ros__parameters:
+    # Use the Ceres solver for better optimization in multi-robot scenarios
+    solver_plugin: "solver_plugins::CeresSolver"
+
+    # Set to true for multi-robot mapping
+    use_scan_barycenter: true
+
+    # List all the laser scan topics here
+    scan_topics: ["/robot_1/scan", "/robot_2/scan", "/robot_3/scan"]
+
+    # Frame IDs
+    # Note: The node infers the robot-specific frames (e.g., /robot_1/odom) from the TF tree.
+    map_frame: "map"
+    odom_frame: "odom"
+    base_frame: "base_link"
+
+    # General Parameters
+    use_scan_matching: true
+    minimum_travel_distance: 0.2
+    minimum_travel_heading: 0.17
+    map_update_interval: 1.0 # s
+    resolution: 0.05
+    max_laser_range: 8.0
+
+    # Other parameters can be left as default or tuned as needed
+    # ...
