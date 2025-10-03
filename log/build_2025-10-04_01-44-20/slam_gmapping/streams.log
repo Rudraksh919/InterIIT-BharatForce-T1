@@ -1,0 +1,24 @@
+[0.096s] Invoking command in '/home/spicygen/Desktop/ros_ws/build/slam_gmapping': CMAKE_PREFIX_PATH=/home/spicygen/Desktop/ros_ws/install/openslam_gmapping:/home/spicygen/Desktop/ros_ws/install/slam_gmapping:/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble /usr/bin/cmake --build /home/spicygen/Desktop/ros_ws/build/slam_gmapping -- -j8 -l8
+[0.437s] [100%] Built target slam_gmapping
+[0.449s] Invoked command in '/home/spicygen/Desktop/ros_ws/build/slam_gmapping' returned '0': CMAKE_PREFIX_PATH=/home/spicygen/Desktop/ros_ws/install/openslam_gmapping:/home/spicygen/Desktop/ros_ws/install/slam_gmapping:/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble /usr/bin/cmake --build /home/spicygen/Desktop/ros_ws/build/slam_gmapping -- -j8 -l8
+[0.475s] Invoking command in '/home/spicygen/Desktop/ros_ws/build/slam_gmapping': CMAKE_PREFIX_PATH=/home/spicygen/Desktop/ros_ws/install/openslam_gmapping:/home/spicygen/Desktop/ros_ws/install/slam_gmapping:/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble /usr/bin/cmake --install /home/spicygen/Desktop/ros_ws/build/slam_gmapping
+[0.483s] -- Install configuration: ""
+[0.484s] -- Execute custom install script
+[0.493s] -- Up-to-date symlink: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/lib/slam_gmapping/slam_gmapping
+[0.504s] -- Up-to-date symlink: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/launch/slam_gmapping.launch.py
+[0.504s] -- Up-to-date symlink: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/ament_index/resource_index/package_run_dependencies/slam_gmapping
+[0.515s] -- Up-to-date symlink: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/ament_index/resource_index/parent_prefix_path/slam_gmapping
+[0.526s] -- Up-to-date symlink: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/environment/ament_prefix_path.sh
+[0.526s] -- Up-to-date symlink: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/environment/ament_prefix_path.dsv
+[0.537s] -- Up-to-date symlink: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/environment/path.sh
+[0.537s] -- Up-to-date symlink: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/environment/path.dsv
+[0.548s] -- Up-to-date symlink: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/local_setup.bash
+[0.559s] -- Up-to-date symlink: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/local_setup.sh
+[0.570s] -- Up-to-date symlink: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/local_setup.zsh
+[0.570s] -- Up-to-date symlink: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/local_setup.dsv
+[0.570s] -- Symlinking: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/package.dsv
+[0.603s] -- Up-to-date symlink: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/ament_index/resource_index/packages/slam_gmapping
+[0.603s] -- Up-to-date symlink: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/cmake/slam_gmappingConfig.cmake
+[0.604s] -- Up-to-date symlink: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/cmake/slam_gmappingConfig-version.cmake
+[0.604s] -- Up-to-date symlink: /home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/package.xml
+[0.609s] Invoked command in '/home/spicygen/Desktop/ros_ws/build/slam_gmapping' returned '0': CMAKE_PREFIX_PATH=/home/spicygen/Desktop/ros_ws/install/openslam_gmapping:/home/spicygen/Desktop/ros_ws/install/slam_gmapping:/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble /usr/bin/cmake --install /home/spicygen/Desktop/ros_ws/build/slam_gmapping

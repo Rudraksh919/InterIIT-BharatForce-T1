@@ -1,0 +1,4 @@
+Invoking command in '/home/spicygen/Desktop/ros_ws/build/multirobot_map_merge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/spicygen/Desktop/ros_ws/build/multirobot_map_merge -- -j8 -l8
+Invoked command in '/home/spicygen/Desktop/ros_ws/build/multirobot_map_merge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/spicygen/Desktop/ros_ws/build/multirobot_map_merge -- -j8 -l8
+Invoking command in '/home/spicygen/Desktop/ros_ws/build/multirobot_map_merge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/spicygen/Desktop/ros_ws/build/multirobot_map_merge
+Invoked command in '/home/spicygen/Desktop/ros_ws/build/multirobot_map_merge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/spicygen/Desktop/ros_ws/build/multirobot_map_merge

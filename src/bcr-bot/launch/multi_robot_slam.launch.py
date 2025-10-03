@@ -32,6 +32,22 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node
 
+import os
+from ament_index_python.packages import get_package_share_directory
+
+# ... inside your generate_launch_description() function ...
+
+# Define the name of your package
+package_name = 'bcr_bot'
+
+# Construct the full path to your YAML file
+params_file = os.path.join(
+    get_package_share_directory(package_name),
+    'config',
+    'robot_1_slam.yaml'  # <-- Replace with your actual .yaml file name
+)
+
+
 def generate_launch_description():
     return LaunchDescription([
         Node(
@@ -39,21 +55,24 @@ def generate_launch_description():
             executable='async_slam_toolbox_node',
             name='slam_toolbox',
             namespace='robot_1',
-            parameters=['/path/to/robot_1_slam.yaml'],
+            # remappings=[('/map','map')],
+            parameters=[params_file],
         ),
         Node(
             package='slam_toolbox',
             executable='async_slam_toolbox_node',
             name='slam_toolbox',
             namespace='robot_2',
-            parameters=['/path/to/robot_1_slam.yaml'],
+            #remappings=[('/map','map')],
+            parameters=[params_file],
         ),
         Node(
             package='slam_toolbox',
             executable='async_slam_toolbox_node',
             name='slam_toolbox',
             namespace='robot_3',
-            parameters=['/path/to/robot_1_slam.yaml'],
+            #remappings=[('/map','map')],
+            parameters=[params_file],
         ),
     ])
 

@@ -1,9 +1,24 @@
+# slam_toolbox:
+#   ros__parameters:
+#     use_sim_time: true
+#     odom_frame: odom           # will resolve as /robot_1/odom
+#     map_frame: map             # will resolve as /robot_1/map
+#     base_frame: base_link      # will resolve as /robot_1/base_link
+#     scan_topic: scan           # will resolve as /robot_1/scan
+#     mode: "mapping"
+#     # Add other SLAM params as needed
+
 slam_toolbox:
   ros__parameters:
+    odom_frame: robot_1/odom
+    map_frame: robot_1/map
+    base_frame: robot_1/base_link
     use_sim_time: true
-    odom_frame: odom          
-    map_frame: robot_1/map             
-    base_frame: base_link      
-    scan_topic: scan           
     mode: "mapping"
-    
+    map_file_name: "my_map"
+    resolution: 0.05
+    publish_period: 1.0
+    transform_timeout: 0.5
+    map_update_interval: 2.0
+    max_laser_range: 20.0
+    minimum_time_interval: 0.5

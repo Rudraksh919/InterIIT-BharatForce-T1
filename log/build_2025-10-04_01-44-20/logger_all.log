@@ -1,0 +1,425 @@
+[0.292s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.292s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x77e712462d40>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x77e712462860>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x77e712462860>>, mixin_verb=('build',))
+[5.730s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[5.730s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[5.730s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[5.730s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[5.730s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[5.730s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[5.730s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/spicygen/Desktop/ros_ws'
+[5.730s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[5.730s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[5.730s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[5.730s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[5.730s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[5.730s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[5.730s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[5.730s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[5.731s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[5.742s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[5.742s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[5.742s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[5.742s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[5.742s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[5.742s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[5.742s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[5.742s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[5.742s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[5.743s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[5.743s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[5.743s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[5.743s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[5.743s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[5.743s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[5.743s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[5.743s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[5.743s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[5.743s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[5.743s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[5.743s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[5.743s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[5.743s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[5.743s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[5.743s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[5.743s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[5.744s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[5.744s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[5.744s] Level 1:colcon.colcon_core.package_identification:_identify(src/bcr-bot) by extensions ['ignore', 'ignore_ament_install']
+[5.744s] Level 1:colcon.colcon_core.package_identification:_identify(src/bcr-bot) by extension 'ignore'
+[5.744s] Level 1:colcon.colcon_core.package_identification:_identify(src/bcr-bot) by extension 'ignore_ament_install'
+[5.744s] Level 1:colcon.colcon_core.package_identification:_identify(src/bcr-bot) by extensions ['colcon_pkg']
+[5.744s] Level 1:colcon.colcon_core.package_identification:_identify(src/bcr-bot) by extension 'colcon_pkg'
+[5.744s] Level 1:colcon.colcon_core.package_identification:_identify(src/bcr-bot) by extensions ['colcon_meta']
+[5.744s] Level 1:colcon.colcon_core.package_identification:_identify(src/bcr-bot) by extension 'colcon_meta'
+[5.744s] Level 1:colcon.colcon_core.package_identification:_identify(src/bcr-bot) by extensions ['ros']
+[5.744s] Level 1:colcon.colcon_core.package_identification:_identify(src/bcr-bot) by extension 'ros'
+[5.748s] DEBUG:colcon.colcon_core.package_identification:Package 'src/bcr-bot' with type 'ros.ament_cmake' and name 'bcr_bot'
+[5.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extensions ['ignore', 'ignore_ament_install']
+[5.767s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'ignore'
+[5.767s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'ignore_ament_install'
+[5.767s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extensions ['colcon_pkg']
+[5.767s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'colcon_pkg'
+[5.767s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extensions ['colcon_meta']
+[5.767s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'colcon_meta'
+[5.767s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extensions ['ros']
+[5.767s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'ros'
+[5.767s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extensions ['cmake', 'python']
+[5.767s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'cmake'
+[5.767s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'python'
+[5.767s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extensions ['python_setup_py']
+[5.767s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'python_setup_py'
+[5.789s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extensions ['ignore', 'ignore_ament_install']
+[5.789s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extension 'ignore'
+[5.789s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extension 'ignore_ament_install'
+[5.789s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extensions ['colcon_pkg']
+[5.789s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extension 'colcon_pkg'
+[5.789s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extensions ['colcon_meta']
+[5.789s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extension 'colcon_meta'
+[5.789s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extensions ['ros']
+[5.790s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extension 'ros'
+[5.791s] DEBUG:colcon.colcon_core.package_identification:Package 'src/m-explore-ros2/explore' with type 'ros.ament_cmake' and name 'explore_lite'
+[5.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/map_merge) by extensions ['ignore', 'ignore_ament_install']
+[5.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/map_merge) by extension 'ignore'
+[5.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/map_merge) by extension 'ignore_ament_install'
+[5.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/map_merge) by extensions ['colcon_pkg']
+[5.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/map_merge) by extension 'colcon_pkg'
+[5.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/map_merge) by extensions ['colcon_meta']
+[5.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/map_merge) by extension 'colcon_meta'
+[5.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/map_merge) by extensions ['ros']
+[5.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/map_merge) by extension 'ros'
+[5.856s] DEBUG:colcon.colcon_core.package_identification:Package 'src/m-explore-ros2/map_merge' with type 'ros.ament_cmake' and name 'multirobot_map_merge'
+[5.924s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extensions ['ignore', 'ignore_ament_install']
+[5.924s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extension 'ignore'
+[5.924s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extension 'ignore_ament_install'
+[5.924s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extensions ['colcon_pkg']
+[5.924s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extension 'colcon_pkg'
+[5.924s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extensions ['colcon_meta']
+[5.924s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extension 'colcon_meta'
+[5.924s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extensions ['ros']
+[5.924s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extension 'ros'
+[5.924s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extensions ['cmake', 'python']
+[5.924s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extension 'cmake'
+[5.924s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extension 'python'
+[5.925s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extensions ['python_setup_py']
+[5.925s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extension 'python_setup_py'
+[5.941s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/openslam_gmapping) by extensions ['ignore', 'ignore_ament_install']
+[5.941s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/openslam_gmapping) by extension 'ignore'
+[5.941s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/openslam_gmapping) by extension 'ignore_ament_install'
+[5.942s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/openslam_gmapping) by extensions ['colcon_pkg']
+[5.942s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/openslam_gmapping) by extension 'colcon_pkg'
+[5.942s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/openslam_gmapping) by extensions ['colcon_meta']
+[5.942s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/openslam_gmapping) by extension 'colcon_meta'
+[5.942s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/openslam_gmapping) by extensions ['ros']
+[5.942s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/openslam_gmapping) by extension 'ros'
+[5.942s] DEBUG:colcon.colcon_core.package_identification:Package 'src/slam_gmapping/openslam_gmapping' with type 'ros.ament_cmake' and name 'openslam_gmapping'
+[5.964s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/slam_gmapping) by extensions ['ignore', 'ignore_ament_install']
+[5.964s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/slam_gmapping) by extension 'ignore'
+[5.964s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/slam_gmapping) by extension 'ignore_ament_install'
+[5.964s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/slam_gmapping) by extensions ['colcon_pkg']
+[5.964s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/slam_gmapping) by extension 'colcon_pkg'
+[5.965s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/slam_gmapping) by extensions ['colcon_meta']
+[5.965s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/slam_gmapping) by extension 'colcon_meta'
+[5.965s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/slam_gmapping) by extensions ['ros']
+[5.965s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping/slam_gmapping) by extension 'ros'
+[5.966s] DEBUG:colcon.colcon_core.package_identification:Package 'src/slam_gmapping/slam_gmapping' with type 'ros.ament_cmake' and name 'slam_gmapping'
+[5.966s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[5.966s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[5.966s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[5.966s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[5.966s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[6.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[6.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[6.239s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/spicygen/Desktop/ros_ws/install
+[6.241s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 503 installed packages in /opt/ros/humble
+[6.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[6.488s] Level 5:colcon.colcon_core.verb:set package 'bcr_bot' build argument 'cmake_args' from command line to 'None'
+[6.488s] Level 5:colcon.colcon_core.verb:set package 'bcr_bot' build argument 'cmake_target' from command line to 'None'
+[6.488s] Level 5:colcon.colcon_core.verb:set package 'bcr_bot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[6.488s] Level 5:colcon.colcon_core.verb:set package 'bcr_bot' build argument 'cmake_clean_cache' from command line to 'False'
+[6.488s] Level 5:colcon.colcon_core.verb:set package 'bcr_bot' build argument 'cmake_clean_first' from command line to 'False'
+[6.489s] Level 5:colcon.colcon_core.verb:set package 'bcr_bot' build argument 'cmake_force_configure' from command line to 'False'
+[6.489s] Level 5:colcon.colcon_core.verb:set package 'bcr_bot' build argument 'ament_cmake_args' from command line to 'None'
+[6.489s] Level 5:colcon.colcon_core.verb:set package 'bcr_bot' build argument 'catkin_cmake_args' from command line to 'None'
+[6.489s] Level 5:colcon.colcon_core.verb:set package 'bcr_bot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[6.489s] DEBUG:colcon.colcon_core.verb:Building package 'bcr_bot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/spicygen/Desktop/ros_ws/build/bcr_bot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/spicygen/Desktop/ros_ws/install/bcr_bot', 'merge_install': False, 'path': '/home/spicygen/Desktop/ros_ws/src/bcr-bot', 'symlink_install': True, 'test_result_base': None}
+[6.489s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_args' from command line to 'None'
+[6.489s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_target' from command line to 'None'
+[6.489s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[6.489s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_clean_cache' from command line to 'False'
+[6.489s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_clean_first' from command line to 'False'
+[6.489s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_force_configure' from command line to 'False'
+[6.489s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'ament_cmake_args' from command line to 'None'
+[6.489s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'catkin_cmake_args' from command line to 'None'
+[6.489s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'catkin_skip_building_tests' from command line to 'False'
+[6.489s] DEBUG:colcon.colcon_core.verb:Building package 'explore_lite' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/spicygen/Desktop/ros_ws/build/explore_lite', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/spicygen/Desktop/ros_ws/install/explore_lite', 'merge_install': False, 'path': '/home/spicygen/Desktop/ros_ws/src/m-explore-ros2/explore', 'symlink_install': True, 'test_result_base': None}
+[6.490s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'cmake_args' from command line to 'None'
+[6.490s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'cmake_target' from command line to 'None'
+[6.490s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[6.490s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'cmake_clean_cache' from command line to 'False'
+[6.490s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'cmake_clean_first' from command line to 'False'
+[6.490s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'cmake_force_configure' from command line to 'False'
+[6.490s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'ament_cmake_args' from command line to 'None'
+[6.490s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'catkin_cmake_args' from command line to 'None'
+[6.490s] Level 5:colcon.colcon_core.verb:set package 'multirobot_map_merge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[6.490s] DEBUG:colcon.colcon_core.verb:Building package 'multirobot_map_merge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/spicygen/Desktop/ros_ws/build/multirobot_map_merge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge', 'merge_install': False, 'path': '/home/spicygen/Desktop/ros_ws/src/m-explore-ros2/map_merge', 'symlink_install': True, 'test_result_base': None}
+[6.490s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_args' from command line to 'None'
+[6.490s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_target' from command line to 'None'
+[6.490s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[6.490s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_clean_cache' from command line to 'False'
+[6.490s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_clean_first' from command line to 'False'
+[6.490s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_force_configure' from command line to 'False'
+[6.490s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'ament_cmake_args' from command line to 'None'
+[6.490s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'catkin_cmake_args' from command line to 'None'
+[6.490s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'catkin_skip_building_tests' from command line to 'False'
+[6.490s] DEBUG:colcon.colcon_core.verb:Building package 'openslam_gmapping' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/spicygen/Desktop/ros_ws/build/openslam_gmapping', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping', 'merge_install': False, 'path': '/home/spicygen/Desktop/ros_ws/src/slam_gmapping/openslam_gmapping', 'symlink_install': True, 'test_result_base': None}
+[6.491s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_args' from command line to 'None'
+[6.491s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_target' from command line to 'None'
+[6.491s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[6.491s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_clean_cache' from command line to 'False'
+[6.491s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_clean_first' from command line to 'False'
+[6.491s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_force_configure' from command line to 'False'
+[6.491s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'ament_cmake_args' from command line to 'None'
+[6.491s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'catkin_cmake_args' from command line to 'None'
+[6.491s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'catkin_skip_building_tests' from command line to 'False'
+[6.491s] DEBUG:colcon.colcon_core.verb:Building package 'slam_gmapping' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/spicygen/Desktop/ros_ws/build/slam_gmapping', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/spicygen/Desktop/ros_ws/install/slam_gmapping', 'merge_install': False, 'path': '/home/spicygen/Desktop/ros_ws/src/slam_gmapping/slam_gmapping', 'symlink_install': True, 'test_result_base': None}
+[6.491s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[6.492s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[6.493s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/spicygen/Desktop/ros_ws/src/slam_gmapping/openslam_gmapping' with build type 'ament_cmake'
+[6.493s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/spicygen/Desktop/ros_ws/src/slam_gmapping/openslam_gmapping'
+[6.498s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[6.498s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.498s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.504s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/spicygen/Desktop/ros_ws/src/bcr-bot' with build type 'ament_cmake'
+[6.504s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/spicygen/Desktop/ros_ws/src/bcr-bot'
+[6.504s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.504s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.509s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/spicygen/Desktop/ros_ws/src/m-explore-ros2/explore' with build type 'ament_cmake'
+[6.509s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/spicygen/Desktop/ros_ws/src/m-explore-ros2/explore'
+[6.509s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.509s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.514s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/spicygen/Desktop/ros_ws/src/m-explore-ros2/map_merge' with build type 'ament_cmake'
+[6.514s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/spicygen/Desktop/ros_ws/src/m-explore-ros2/map_merge'
+[6.514s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.514s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.557s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/spicygen/Desktop/ros_ws/build/openslam_gmapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/spicygen/Desktop/ros_ws/build/openslam_gmapping -- -j8 -l8
+[6.618s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/spicygen/Desktop/ros_ws/build/bcr_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/spicygen/Desktop/ros_ws/build/bcr_bot -- -j8 -l8
+[6.691s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/spicygen/Desktop/ros_ws/build/explore_lite': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/spicygen/Desktop/ros_ws/build/explore_lite -- -j8 -l8
+[6.723s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/spicygen/Desktop/ros_ws/build/multirobot_map_merge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/spicygen/Desktop/ros_ws/build/multirobot_map_merge -- -j8 -l8
+[6.943s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/spicygen/Desktop/ros_ws/build/bcr_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/spicygen/Desktop/ros_ws/build/bcr_bot -- -j8 -l8
+[7.044s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/spicygen/Desktop/ros_ws/build/bcr_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/spicygen/Desktop/ros_ws/build/bcr_bot
+[7.303s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/spicygen/Desktop/ros_ws/build/explore_lite' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/spicygen/Desktop/ros_ws/build/explore_lite -- -j8 -l8
+[7.361s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/spicygen/Desktop/ros_ws/build/explore_lite': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/spicygen/Desktop/ros_ws/build/explore_lite
+[7.362s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/spicygen/Desktop/ros_ws/build/openslam_gmapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/spicygen/Desktop/ros_ws/build/openslam_gmapping -- -j8 -l8
+[7.400s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/spicygen/Desktop/ros_ws/build/openslam_gmapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/spicygen/Desktop/ros_ws/build/openslam_gmapping
+[7.608s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openslam_gmapping)
+[7.610s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/spicygen/Desktop/ros_ws/build/openslam_gmapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/spicygen/Desktop/ros_ws/build/openslam_gmapping
+[7.646s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping' for CMake module files
+[7.693s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping' for CMake config files
+[7.880s] Level 1:colcon.colcon_core.shell:create_environment_hook('openslam_gmapping', 'cmake_prefix_path')
+[7.881s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/hook/cmake_prefix_path.ps1'
+[7.883s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/hook/cmake_prefix_path.dsv'
+[7.885s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/hook/cmake_prefix_path.sh'
+[7.887s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/lib'
+[7.887s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/bin'
+[7.887s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/lib/pkgconfig/openslam_gmapping.pc'
+[7.887s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/lib/python3.10/site-packages'
+[7.888s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/bin'
+[7.888s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/package.ps1'
+[7.889s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/package.dsv'
+[7.890s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/package.sh'
+[7.892s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/package.bash'
+[7.893s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/package.zsh'
+[7.895s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/colcon-core/packages/openslam_gmapping)
+[7.895s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openslam_gmapping)
+[7.895s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping' for CMake module files
+[7.896s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping' for CMake config files
+[7.897s] Level 1:colcon.colcon_core.shell:create_environment_hook('openslam_gmapping', 'cmake_prefix_path')
+[7.897s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/hook/cmake_prefix_path.ps1'
+[7.897s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/hook/cmake_prefix_path.dsv'
+[7.898s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/hook/cmake_prefix_path.sh'
+[7.898s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/lib'
+[7.899s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/bin'
+[7.899s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/lib/pkgconfig/openslam_gmapping.pc'
+[7.899s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/lib/python3.10/site-packages'
+[7.899s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/bin'
+[7.900s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/package.ps1'
+[7.900s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/package.dsv'
+[7.901s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/package.sh'
+[7.902s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/package.bash'
+[7.902s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/openslam_gmapping/package.zsh'
+[7.903s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/spicygen/Desktop/ros_ws/install/openslam_gmapping/share/colcon-core/packages/openslam_gmapping)
+[7.903s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/spicygen/Desktop/ros_ws/src/slam_gmapping/slam_gmapping' with build type 'ament_cmake'
+[7.903s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/spicygen/Desktop/ros_ws/src/slam_gmapping/slam_gmapping'
+[7.904s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.904s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.911s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/spicygen/Desktop/ros_ws/build/multirobot_map_merge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/spicygen/Desktop/ros_ws/build/multirobot_map_merge -- -j8 -l8
+[7.917s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/spicygen/Desktop/ros_ws/build/multirobot_map_merge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/spicygen/Desktop/ros_ws/build/multirobot_map_merge
+[7.918s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(explore_lite)
+[7.919s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/explore_lite' for CMake module files
+[7.919s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/spicygen/Desktop/ros_ws/build/explore_lite' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/spicygen/Desktop/ros_ws/build/explore_lite
+[7.920s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/explore_lite' for CMake config files
+[7.922s] Level 1:colcon.colcon_core.shell:create_environment_hook('explore_lite', 'cmake_prefix_path')
+[7.923s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.ps1'
+[7.923s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.dsv'
+[7.924s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.sh'
+[7.925s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/explore_lite/lib'
+[7.925s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/explore_lite/bin'
+[7.925s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/explore_lite/lib/pkgconfig/explore_lite.pc'
+[7.926s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/explore_lite/lib/python3.10/site-packages'
+[7.926s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/explore_lite/bin'
+[7.927s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/package.ps1'
+[7.927s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/package.dsv'
+[7.928s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/package.sh'
+[7.928s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/package.bash'
+[7.928s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/package.zsh'
+[7.929s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/spicygen/Desktop/ros_ws/install/explore_lite/share/colcon-core/packages/explore_lite)
+[7.929s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(explore_lite)
+[7.929s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/explore_lite' for CMake module files
+[7.930s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/explore_lite' for CMake config files
+[7.930s] Level 1:colcon.colcon_core.shell:create_environment_hook('explore_lite', 'cmake_prefix_path')
+[7.930s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.ps1'
+[7.931s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.dsv'
+[7.931s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.sh'
+[7.931s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/explore_lite/lib'
+[7.932s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/explore_lite/bin'
+[7.932s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/explore_lite/lib/pkgconfig/explore_lite.pc'
+[7.932s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/explore_lite/lib/python3.10/site-packages'
+[7.932s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/explore_lite/bin'
+[7.932s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/package.ps1'
+[7.933s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/package.dsv'
+[7.933s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/package.sh'
+[7.934s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/package.bash'
+[7.934s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/explore_lite/share/explore_lite/package.zsh'
+[7.935s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/spicygen/Desktop/ros_ws/install/explore_lite/share/colcon-core/packages/explore_lite)
+[8.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/spicygen/Desktop/ros_ws/build/slam_gmapping': CMAKE_PREFIX_PATH=/home/spicygen/Desktop/ros_ws/install/openslam_gmapping:/home/spicygen/Desktop/ros_ws/install/slam_gmapping:/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble /usr/bin/cmake --build /home/spicygen/Desktop/ros_ws/build/slam_gmapping -- -j8 -l8
+[8.119s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(multirobot_map_merge)
+[8.119s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge' for CMake module files
+[8.119s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/spicygen/Desktop/ros_ws/build/multirobot_map_merge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/spicygen/Desktop/ros_ws/build/multirobot_map_merge
+[8.148s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge' for CMake config files
+[8.159s] Level 1:colcon.colcon_core.shell:create_environment_hook('multirobot_map_merge', 'cmake_prefix_path')
+[8.159s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/hook/cmake_prefix_path.ps1'
+[8.160s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/hook/cmake_prefix_path.dsv'
+[8.160s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/hook/cmake_prefix_path.sh'
+[8.161s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/lib'
+[8.161s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/bin'
+[8.161s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/lib/pkgconfig/multirobot_map_merge.pc'
+[8.161s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/lib/python3.10/site-packages'
+[8.161s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/bin'
+[8.162s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/package.ps1'
+[8.162s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/package.dsv'
+[8.163s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/package.sh'
+[8.163s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/package.bash'
+[8.163s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/package.zsh'
+[8.164s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/colcon-core/packages/multirobot_map_merge)
+[8.164s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(multirobot_map_merge)
+[8.164s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge' for CMake module files
+[8.165s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge' for CMake config files
+[8.165s] Level 1:colcon.colcon_core.shell:create_environment_hook('multirobot_map_merge', 'cmake_prefix_path')
+[8.165s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/hook/cmake_prefix_path.ps1'
+[8.166s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/hook/cmake_prefix_path.dsv'
+[8.166s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/hook/cmake_prefix_path.sh'
+[8.167s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/lib'
+[8.167s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/bin'
+[8.167s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/lib/pkgconfig/multirobot_map_merge.pc'
+[8.167s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/lib/python3.10/site-packages'
+[8.167s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/bin'
+[8.167s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/package.ps1'
+[8.168s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/package.dsv'
+[8.168s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/package.sh'
+[8.169s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/package.bash'
+[8.169s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/multirobot_map_merge/package.zsh'
+[8.170s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge/share/colcon-core/packages/multirobot_map_merge)
+[8.353s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/spicygen/Desktop/ros_ws/build/slam_gmapping' returned '0': CMAKE_PREFIX_PATH=/home/spicygen/Desktop/ros_ws/install/openslam_gmapping:/home/spicygen/Desktop/ros_ws/install/slam_gmapping:/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble /usr/bin/cmake --build /home/spicygen/Desktop/ros_ws/build/slam_gmapping -- -j8 -l8
+[8.380s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/spicygen/Desktop/ros_ws/build/slam_gmapping': CMAKE_PREFIX_PATH=/home/spicygen/Desktop/ros_ws/install/openslam_gmapping:/home/spicygen/Desktop/ros_ws/install/slam_gmapping:/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble /usr/bin/cmake --install /home/spicygen/Desktop/ros_ws/build/slam_gmapping
+[8.512s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(slam_gmapping)
+[8.513s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/slam_gmapping' for CMake module files
+[8.514s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/spicygen/Desktop/ros_ws/build/slam_gmapping' returned '0': CMAKE_PREFIX_PATH=/home/spicygen/Desktop/ros_ws/install/openslam_gmapping:/home/spicygen/Desktop/ros_ws/install/slam_gmapping:/home/spicygen/Desktop/ros_ws/install/multirobot_map_merge:/home/spicygen/Desktop/ros_ws/install/explore_lite:/home/spicygen/Desktop/ros_ws/install/bcr_bot:/opt/ros/humble /usr/bin/cmake --install /home/spicygen/Desktop/ros_ws/build/slam_gmapping
+[8.530s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/slam_gmapping' for CMake config files
+[8.552s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_gmapping', 'cmake_prefix_path')
+[8.553s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/hook/cmake_prefix_path.ps1'
+[8.555s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/hook/cmake_prefix_path.dsv'
+[8.556s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/hook/cmake_prefix_path.sh'
+[8.557s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/slam_gmapping/lib'
+[8.558s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/slam_gmapping/bin'
+[8.558s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/slam_gmapping/lib/pkgconfig/slam_gmapping.pc'
+[8.558s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/slam_gmapping/lib/python3.10/site-packages'
+[8.558s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/slam_gmapping/bin'
+[8.559s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/package.ps1'
+[8.559s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/package.dsv'
+[8.560s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/package.sh'
+[8.560s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/package.bash'
+[8.560s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/package.zsh'
+[8.561s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/colcon-core/packages/slam_gmapping)
+[8.561s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(slam_gmapping)
+[8.562s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/slam_gmapping' for CMake module files
+[8.562s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/slam_gmapping' for CMake config files
+[8.562s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_gmapping', 'cmake_prefix_path')
+[8.562s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/hook/cmake_prefix_path.ps1'
+[8.563s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/hook/cmake_prefix_path.dsv'
+[8.563s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/hook/cmake_prefix_path.sh'
+[8.564s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/slam_gmapping/lib'
+[8.564s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/slam_gmapping/bin'
+[8.564s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/slam_gmapping/lib/pkgconfig/slam_gmapping.pc'
+[8.564s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/slam_gmapping/lib/python3.10/site-packages'
+[8.564s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/slam_gmapping/bin'
+[8.565s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/package.ps1'
+[8.565s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/package.dsv'
+[8.566s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/package.sh'
+[8.566s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/package.bash'
+[8.567s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/slam_gmapping/package.zsh'
+[8.568s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/spicygen/Desktop/ros_ws/install/slam_gmapping/share/colcon-core/packages/slam_gmapping)
+[8.569s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bcr_bot)
+[8.569s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/bcr_bot' for CMake module files
+[8.570s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/spicygen/Desktop/ros_ws/build/bcr_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/spicygen/Desktop/ros_ws/build/bcr_bot
+[8.575s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/bcr_bot' for CMake config files
+[8.600s] Level 1:colcon.colcon_core.shell:create_environment_hook('bcr_bot', 'cmake_prefix_path')
+[8.601s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/hook/cmake_prefix_path.ps1'
+[8.601s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/hook/cmake_prefix_path.dsv'
+[8.602s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/hook/cmake_prefix_path.sh'
+[8.602s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/bcr_bot/lib'
+[8.603s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/bcr_bot/bin'
+[8.603s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/bcr_bot/lib/pkgconfig/bcr_bot.pc'
+[8.603s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/bcr_bot/lib/python3.10/site-packages'
+[8.603s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/bcr_bot/bin'
+[8.604s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/package.ps1'
+[8.604s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/package.dsv'
+[8.604s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/package.sh'
+[8.605s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/package.bash'
+[8.605s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/package.zsh'
+[8.606s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/spicygen/Desktop/ros_ws/install/bcr_bot/share/colcon-core/packages/bcr_bot)
+[8.606s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bcr_bot)
+[8.606s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/bcr_bot' for CMake module files
+[8.607s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/bcr_bot' for CMake config files
+[8.607s] Level 1:colcon.colcon_core.shell:create_environment_hook('bcr_bot', 'cmake_prefix_path')
+[8.607s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/hook/cmake_prefix_path.ps1'
+[8.608s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/hook/cmake_prefix_path.dsv'
+[8.608s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/hook/cmake_prefix_path.sh'
+[8.609s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/bcr_bot/lib'
+[8.609s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/bcr_bot/bin'
+[8.609s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/bcr_bot/lib/pkgconfig/bcr_bot.pc'
+[8.609s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/bcr_bot/lib/python3.10/site-packages'
+[8.609s] Level 1:colcon.colcon_core.environment:checking '/home/spicygen/Desktop/ros_ws/install/bcr_bot/bin'
+[8.610s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/package.ps1'
+[8.610s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/package.dsv'
+[8.610s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/package.sh'
+[8.611s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/package.bash'
+[8.611s] INFO:colcon.colcon_core.shell:Creating package script '/home/spicygen/Desktop/ros_ws/install/bcr_bot/share/bcr_bot/package.zsh'
+[8.612s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/spicygen/Desktop/ros_ws/install/bcr_bot/share/colcon-core/packages/bcr_bot)
+[8.612s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.612s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.612s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[8.612s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.684s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.684s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.684s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.698s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.699s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/spicygen/Desktop/ros_ws/install/local_setup.ps1'
+[8.700s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/spicygen/Desktop/ros_ws/install/_local_setup_util_ps1.py'
+[8.702s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/spicygen/Desktop/ros_ws/install/setup.ps1'
+[8.704s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/spicygen/Desktop/ros_ws/install/local_setup.sh'
+[8.705s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/spicygen/Desktop/ros_ws/install/_local_setup_util_sh.py'
+[8.705s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/spicygen/Desktop/ros_ws/install/setup.sh'
+[8.707s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/spicygen/Desktop/ros_ws/install/local_setup.bash'
+[8.708s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/spicygen/Desktop/ros_ws/install/setup.bash'
+[8.709s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/spicygen/Desktop/ros_ws/install/local_setup.zsh'
+[8.710s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/spicygen/Desktop/ros_ws/install/setup.zsh'
