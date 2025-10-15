@@ -99,6 +99,7 @@ def generate_launch_description():
                     ' sim_gazebo:=', "true",
                     ' odometry_source:=', odometry_source,
                     ' robot_namespace:=', namespace,
+                    ' tf_prefix:=', namespace,
                 ])
             }],
             remappings=[
